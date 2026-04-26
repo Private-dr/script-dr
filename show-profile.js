@@ -2,27 +2,26 @@ javascript: (function() {
     // --- السكربت الأول: استخراج ID واعتراض WebSocket ---
     // --- السكربت الأول: استخراج ID تلقائي واعتراض WebSocket ---
     let myId = null; // سيتم ملؤه عند أول حدث صادر منك
-    
+
     function attachSocketListener(socket) {
         if (_socketListenerAttached === socket) return;
         _socketListenerAttached = socket;
-        
+
         console.log("📡 تم ربط مستمع الرسائل على السوكت الجديد");
-        
+
         socket.addEventListener("message", function(event) {
             try {
                 const data = event.data;
                 if (typeof data === "string" && data.startsWith("42")) {
                     const payload = JSON.parse(data.slice(2));
                     const [eventName, content] = payload;
-                    
+
                     // استخراج الـ ID الخاص بك عند أول حدث صادر منك
                     if (!myId && eventName === "msg" && content?.data?.id) {
                         myId = content.data.id;
                         console.log("✅ تم استخراج الـ ID الخاص بك:", myId);
-                        alert(`✅ تم استخراج الـ ID الخاص بك:\n${myId}`);
                     }
-                    
+
                     // تتبع مواقع المستخدمين في الغرف
                     if (eventName === "msg" && content?.cmd === "wr" && Array.isArray(content.data)) {
                         const [userId, roomId] = content.data;
@@ -31,7 +30,7 @@ javascript: (function() {
                         const roomName = roomEl?.querySelector(".u-topic")?.textContent.trim();
                         if (roomName) roomNames[roomId] = roomName;
                     }
-                    
+
                     // دخول المستخدمين
                     if (eventName === "msg" && content?.cmd === "wj") {
                         const d = content.data;
@@ -39,7 +38,7 @@ javascript: (function() {
                             userRoomMap[d.id] = d.rid;
                         }
                     }
-                    
+
                     // خروج المستخدمين
                     if (eventName === "msg" && content?.cmd === "wl") {
                         const d = content.data;
@@ -51,17 +50,17 @@ javascript: (function() {
             } catch (e) {}
         });
     }
-    
-    
+
+
     // ═══════════════════════════════════════════════════
     // 🔑 المتغيرات المشتركة - تُعرّف هنا قبل كل شيء
     // ═══════════════════════════════════════════════════
     const userRoomMap = {};
     const roomNames = {};
     let _socketListenerAttached = null; // لتتبع أي سوكت مربوط عليه المستمع
-    
-    
-    
+
+
+
     // ═══════════════════════════════════════════════════
     // 🕵️ اعتراض WebSocket.send للكشف عن السوكت الحقيقي
     // + اعتراض إنشاء أي سوكت جديد
@@ -69,7 +68,7 @@ javascript: (function() {
     const originalSend = WebSocket.prototype.send;
     WebSocket.prototype.send = function(...args) {
         const raw = args[0];
-        
+
         // كل ما يرسل أي رسالة 42 نحفظ السوكت ونربط المستمع
         if (typeof raw === "string" && raw.startsWith("42")) {
             if (this.readyState === 1) {
@@ -81,20 +80,19 @@ javascript: (function() {
                 }
             }
         }
-        
+
         return originalSend.apply(this, args);
     };
-    
+
     // ═══════════════════════════════════════════════════
     // 🔄 اعتراض WebSocket constructor لالتقاط أي اتصال جديد فوراً
     // ═══════════════════════════════════════════════════
     const OriginalWebSocket = window.WebSocket;
     window.WebSocket = function(...args) {
         const ws = new OriginalWebSocket(...args);
-        
+
         ws.addEventListener('open', function() {
             console.log("🌐 اتصال WebSocket جديد مفتوح:", args[0]);
-            // سيتم التقاطه عبر send أيضاً، لكن نضيف مستمع مبكر
             setTimeout(() => {
                 if (ws.readyState === 1) {
                     window._realSocket_ = ws;
@@ -103,35 +101,35 @@ javascript: (function() {
                 }
             }, 1000);
         });
-        
+
         return ws;
     };
+
     window.WebSocket.prototype = OriginalWebSocket.prototype;
     window.WebSocket.CONNECTING = OriginalWebSocket.CONNECTING;
     window.WebSocket.OPEN = OriginalWebSocket.OPEN;
     window.WebSocket.CLOSING = OriginalWebSocket.CLOSING;
     window.WebSocket.CLOSED = OriginalWebSocket.CLOSED;
-    
-    alert(`✅ تم استخراج الـ ID:\n${myId}\n\n📡 بدأ اعتراض WebSocket مع دعم إعادة الاتصال...`);
-    
+
+    alert("سوي لايك لعضويتك لتشغيل السكربت");
+
     // ═══════════════════════════════════════════════════
     // ⏳ مراقبة مستمرة لحالة السوكت (فحص دوري)
     // ═══════════════════════════════════════════════════
     setInterval(() => {
-        // إذا السوكت الحالي مغلق، نبحث عن واحد جديد
         if (!window._realSocket_ || window._realSocket_.readyState !== 1) {
             console.log("⚠ السوكت الحالي غير متصل، بانتظار اتصال جديد...");
         }
     }, 5000);
-    
+
     // --- الانتظار حتى يصبح الاتصال جاهز ---
     const waitForSocket = setInterval(() => {
         if (window._realSocket_ && window._realSocket_.readyState === 1) {
             clearInterval(waitForSocket);
-            
+
             // ربط المستمع على أول سوكت
             attachSocketListener(window._realSocket_);
-            
+
             // --- السكربت الثاني: واجهة البروفايل والأزرار ---
             (function() {
                 function showToast(t, e = 3000) {
@@ -148,7 +146,7 @@ javascript: (function() {
                     document.getElementById("mobile-toast-container").appendChild(o);
                     e > 0 && setTimeout(() => o.remove(), e);
                 }
-                
+
                 function sendSocketPayload(cmd, data) {
                     // 🔑 دائماً نستخدم أحدث سوكت
                     const sock = window._realSocket_;
@@ -168,9 +166,9 @@ javascript: (function() {
                         return false;
                     }
                 }
-                
+
                 // 🔑 نستخدم userRoomMap و roomNames المعرّفة أعلاه (مشتركة)
-                
+
                 function bindProfileElement(el) {
                     const status = el.querySelector('img[src*="s4.png"]'),
                         uid = [...el.classList].find(c => c.startsWith("uid"));
@@ -189,7 +187,7 @@ javascript: (function() {
                         };
                     }
                 }
-                
+
                 if (!document.getElementById("cp-showprofile-modal")) {
                     const style = document.createElement("style");
                     style.textContent = `
@@ -213,7 +211,7 @@ javascript: (function() {
   #cp-room-box img {max-width:24px;border-radius:4px;}
   `;
                     document.head.appendChild(style);
-                    
+
                     const modal = document.createElement("div");
                     modal.id = "cp-showprofile-modal";
                     modal.innerHTML = `
@@ -264,7 +262,7 @@ javascript: (function() {
     </div>
   `;
                     document.body.appendChild(modal);
-                    
+
                     const close = modal.querySelector(".cp-sp-close"),
                         like = modal.querySelector("#cp-sp-like"),
                         notify = modal.querySelector("#cp-sp-notify"),
@@ -279,7 +277,7 @@ javascript: (function() {
                         icoEl = modal.querySelector("#cp-user-ico"),
                         bannerEl = modal.querySelector("#cp-user-banner"),
                         roomBox = modal.querySelector("#cp-room-box");
-                    
+
                     const mic = modal.querySelector("#cp-sp-mic"),
                         mute = modal.querySelector("#cp-sp-mute"),
                         allow = modal.querySelector("#cp-sp-allow"),
@@ -294,25 +292,25 @@ javascript: (function() {
                         report = modal.querySelector("#cp-sp-report"),
                         ignore = modal.querySelector("#cp-sp-ignore"),
                         unignore = modal.querySelector("#cp-sp-unignore");
-                    
+
                     close.onclick = () => hide();
                     cancel.onclick = () => {
                         input.value = "";
                         hideNotify();
                     };
-                    
+
                     let target = {
                         userId: null,
                         username: null
                     };
-                    
+
                     function show(id, name, bgImg) {
                         target.userId = id;
                         target.username = name || "";
                         const card = document.querySelector(".uid" + id);
                         const topic = card?.querySelector(".u-topic")?.textContent.trim() || name || id;
                         userNameSpan.textContent = topic;
-                        
+
                         // 🔑 طلب موقع المستخدم من السيرفر عند فتح البروفايل
                         if (window._realSocket_ && window._realSocket_.readyState === 1) {
                             window._realSocket_.send('42' + JSON.stringify(["msg", {
@@ -320,7 +318,7 @@ javascript: (function() {
                                 "data": id
                             }]));
                         }
-                        
+
                         // تأخير بسيط لانتظار الرد
                         setTimeout(() => {
                             const roomId = userRoomMap[id];
@@ -337,7 +335,7 @@ javascript: (function() {
                                 roomBox.innerHTML = `<div style="color:#aaa;font-size:13px;">ليس في غرفة</div>`;
                             }
                         }, 500);
-                        
+
                         const ico = card?.querySelector(".u-ico")?.src || "";
                         if (ico) bannerEl.src = ico;
                         else bannerEl.removeAttribute("src");
@@ -353,7 +351,7 @@ javascript: (function() {
                         hideNotify();
                         modal.style.display = "block";
                     }
-                    
+
                     function hide() {
                         modal.style.display = "none";
                         target = {
@@ -361,15 +359,15 @@ javascript: (function() {
                             username: null
                         };
                     }
-                    
+
                     function showNotify() {
                         box.style.display = "block";
                     }
-                    
+
                     function hideNotify() {
                         box.style.display = "none";
                     }
-                    
+
                     like.onclick = () => {
                         const id = target.userId;
                         if (!id) return;
@@ -380,7 +378,7 @@ javascript: (function() {
                             (showToast("✅ تم إرسال الإعجاب", 3000), like.classList.add("active"), setTimeout(() => like.classList.remove("active"), 1500)) :
                             showToast("❌ فشل إرسال الإعجاب", 4000);
                     };
-                    
+
                     notify.onclick = () => {
                         showNotify();
                     };
@@ -396,7 +394,7 @@ javascript: (function() {
                             (showToast("✅ تم إرسال التنبيه", 3000), input.value = "", hideNotify(), hide()) :
                             alert("❌ فشل الإرسال");
                     };
-                    
+
                     chat.onclick = () => {
                         const id = target.userId;
                         if (id) {
@@ -406,7 +404,7 @@ javascript: (function() {
                             } else showToast("❌ دالة openw غير موجودة");
                         }
                     };
-                    
+
                     // 🔑 الأزرار الإدارية - تستخدم دائماً أحدث سوكت
                     mic.onclick = () => {
                         if (window._realSocket_?.readyState === 1)
@@ -458,13 +456,13 @@ javascript: (function() {
                     report.onclick = () => showToast("🚧 التبليغ لم يُبرمج بعد", 3000);
                     ignore.onclick = () => showToast("🚧 التجاهل لم يُبرمج بعد", 3000);
                     unignore.onclick = () => showToast("🚧 إلغاء التجاهل لم يُبرمج بعد", 3000);
-                    
+
                     window.cpShowProfile = {
                         show,
                         hide
                     };
                 }
-                
+
                 document.querySelectorAll("div").forEach(bindProfileElement);
                 new MutationObserver(mutations => {
                     mutations.forEach(m => {
@@ -480,13 +478,13 @@ javascript: (function() {
                     subtree: true
                 });
             })();
-            
+
             // --- السكربت الثالث: إصلاح العناصر + تنبيهات المخفيين ---
             (function() {
                 function showUsers() {
                     document.querySelectorAll('.btn').forEach(el => el.style.display = 'block');
                     document.querySelectorAll('[class^="itarr"]').forEach(el => el.remove());
-                    
+
                     if (typeof _ma56zznz2 !== 'undefined' && Array.isArray(_ma56zznz2)) {
                         _ma56zznz2.forEach(obj => {
                             document.querySelectorAll(`.${obj.cls}`).forEach(el => {
@@ -496,16 +494,16 @@ javascript: (function() {
                         });
                     }
                 }
-                
+
                 if (!document.getElementById("mobile-toast-container")) {
                     const container = document.createElement("div");
                     container.id = "mobile-toast-container";
                     container.style = "position:fixed;top:15px;left:50%;transform:translateX(-50%);z-index:99999;max-width:320px;text-align:center";
                     document.body.appendChild(container);
                 }
-                
+
                 const alertedUsers = new Set();
-                
+
                 function showAlert(user) {
                     const toast = document.createElement("div");
                     toast.onclick = () => toast.remove();
@@ -524,21 +522,21 @@ javascript: (function() {
     `;
                     document.getElementById("mobile-toast-container").appendChild(toast);
                 }
-                
+
                 function showAllHigherRanksOnlyHidden() {
                     const hiddenSelector = [
                         ".uzr[style*='max-height: 0']",
                         ".uzr[style*='max-height:0']"
                     ].join(",");
-                    
+
                     document.querySelectorAll(hiddenSelector).forEach(el => {
                         el.setAttribute('data-was-hidden', '1');
                     });
-                    
+
                     document.querySelectorAll("[data-was-hidden='1']").forEach(el => {
                         const searchBox = document.getElementById('usearch');
                         if (searchBox && searchBox.value.trim().length > 0) return;
-                        
+
                         if (!el._patched) {
                             const originalAdd = el.classList.add;
                             el.classList.add = function(...args) {
@@ -547,20 +545,20 @@ javascript: (function() {
                             };
                             el._patched = true;
                         }
-                        
+
                         if (el.classList.contains('__rv_me')) {
                             el.classList.remove('__rv_me');
                         }
-                        
+
                         el.style.display = 'block';
                         el.style.maxHeight = 'none';
                         el.querySelectorAll('[style*="display: none"]').forEach(inner => {
                             inner.style.display = 'block';
                         });
-                        
+
                         const ustat = el.querySelector("img.ustat, img[src*='s0.png'], img[src*='s4.png']");
                         if (ustat) ustat.src = 'imgs/s4.png';
-                        
+
                         const nameAttr = el.getAttribute('n');
                         const nameSpan = el.querySelector('.u-topic');
                         if (nameSpan && nameSpan.textContent.trim() === '') {
@@ -571,7 +569,7 @@ javascript: (function() {
                                 if (orig) nameSpan.textContent = orig;
                             }
                         }
-                        
+
                         const pic = el.querySelector('.u-pic');
                         if (pic) {
                             const origPic = pic.getAttribute('data-original-pic');
@@ -584,7 +582,7 @@ javascript: (function() {
                         }
                     });
                 }
-                
+
                 function fixHiddenFrames() {
                     document.querySelectorAll('.uzr').forEach(el => {
                         const style = window.getComputedStyle(el);
@@ -592,7 +590,7 @@ javascript: (function() {
                             el.style.width = '';
                             el.style.height = '';
                         }
-                        
+
                         const frameImg = el.querySelector('.u-pic img[class^="itarr_"]');
                         if (frameImg) {
                             frameImg.classList.forEach(cls => {
@@ -604,25 +602,25 @@ javascript: (function() {
                                 }
                             });
                         }
-                        
+
                         if (el.classList.contains('ahmed')) {
                             el.classList.remove('ahmed');
                             el.style.width = '';
                             el.style.height = '';
                         }
-                        
+
                         if (el.classList.contains('mhmood')) {
                             el.classList.remove('mhmood');
                             el.style.width = '';
                             el.style.height = '';
                         }
-                        
+
                         if (el.classList.contains('__rv_me')) {
                             el.classList.remove('__rv_me');
                             el.style.width = '';
                             el.style.height = '';
                         }
-                        
+
                         const topic = el.querySelector('.u-topic');
                         if (topic) {
                             const bg = window.getComputedStyle(topic).backgroundColor;
@@ -632,12 +630,12 @@ javascript: (function() {
                             }
                         }
                     });
-                    
+
                     document.querySelectorAll(".uzr.custom-alaw").forEach(el => {
                         el.classList.remove("custom-alaw");
                     });
                 }
-                
+
                 function checkHiddenUsers() {
                     document.querySelectorAll('.uzr.inroom').forEach(userEl => {
                         const statusImg = userEl.querySelector('img.ustat');
@@ -646,7 +644,7 @@ javascript: (function() {
                             if (uidClass && !alertedUsers.has(uidClass)) {
                                 alertedUsers.add(uidClass);
                                 const name = userEl.getAttribute("n")?.trim() || "بدون اسم";
-                                
+
                                 let pic = "pic/unknown.png";
                                 const picDiv = userEl.querySelector('.u-pic');
                                 if (picDiv) {
@@ -656,7 +654,7 @@ javascript: (function() {
                                         pic = match[1].startsWith('http') ? match[1] : window.location.origin + '/' + match[1].replace(/^\/+/, '');
                                     }
                                 }
-                                
+
                                 const icon = userEl.querySelector('.u-ico')?.src || "";
                                 const hash = userEl.querySelector('.uhash')?.textContent || "";
                                 showAlert({
@@ -668,18 +666,18 @@ javascript: (function() {
                             }
                         }
                     });
-                    
+
                     for (const uid of alertedUsers) {
                         if (!document.querySelector(`.uzr.inroom.${uid} img.ustat[src*="s4.png"]`)) {
                             alertedUsers.delete(uid);
                         }
                     }
                 }
-                
+
                 new MutationObserver(() => {
                     const searchBox = document.getElementById('usearch');
                     if (searchBox && searchBox.value.trim().length > 0) return;
-                    
+
                     showUsers();
                     showAllHigherRanksOnlyHidden();
                     fixHiddenFrames();
@@ -688,17 +686,17 @@ javascript: (function() {
                     childList: true,
                     subtree: true
                 });
-                
+
                 showUsers();
                 showAllHigherRanksOnlyHidden();
                 fixHiddenFrames();
                 checkHiddenUsers();
-                
+
                 console.log("✅ تم التفعيل: إظهار الأزرار + المخفيين + إصلاح جميع الإطارات والألوان + تنبيه مع دعم إعادة الاتصال.");
             })();
-            
+
             console.log("🚀 تم تشغيل السكربت الثاني والثالث بعد جاهزية الاتصال");
         }
     }, 500);
-    
+
 })();
