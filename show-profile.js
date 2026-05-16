@@ -1,739 +1,471 @@
-javascript: (function() {
-    // --- السكربت الأول: استخراج ID واعتراض WebSocket ---
-    // --- السكربت الأول: استخراج ID تلقائي واعتراض WebSocket ---
-    let myId = null; // سيتم ملؤه عند أول حدث صادر منك
+javascript: function _0x36f4(_0x450c95, _0x14649d) {
+    _0x450c95 = _0x450c95 - (0x5 * -0x710 + -0x37 * -0x35 + 0x892 * 0x3);
+    const _0x1c0eb3 = _0x3629();
+    let _0x41697f = _0x1c0eb3[_0x450c95];
+    if (_0x36f4['anIGVv'] === undefined) {
+        var _0x317a4a = function(_0x44daa3) {
+            const _0x29ec83 = 'abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789+/=';
+            let _0x284c6b = '',
+                _0x3b51bf = '';
+            for (let _0x2e7085 = 0x1dee + 0x1987 + -0x3775, _0x41fb96, _0x14bd58, _0x5c729f = -0x1 * 0x12bf + -0x25 * -0xc5 + -0x9ba; _0x14bd58 = _0x44daa3['charAt'](_0x5c729f++); ~_0x14bd58 && (_0x41fb96 = _0x2e7085 % (-0x9a1 + -0xb90 + -0x1 * -0x1535) ? _0x41fb96 * (0x2 * -0x407 + 0x19b1 + -0x1 * 0x1163) + _0x14bd58 : _0x14bd58, _0x2e7085++ % (-0x1a * 0x1f + 0x5 * -0x2bb + 0x10d1)) ? _0x284c6b += String['fromCharCode'](0x1a84 + 0xccc + -0x2651 & _0x41fb96 >> (-(-0x2038 + -0x2e1 + -0x2b * -0xd1) * _0x2e7085 & -0x1 * 0x2ce + -0x1964 + 0x1c38)) : -0x1e92 + 0xd * -0x106 + 0x9c * 0x48) {
+                _0x14bd58 = _0x29ec83['indexOf'](_0x14bd58);
+            }
+            for (let _0x56fc87 = 0x1a0e + 0x15 * 0x41 + -0x1 * 0x1f63, _0x44789b = _0x284c6b['length']; _0x56fc87 < _0x44789b; _0x56fc87++) {
+                _0x3b51bf += '%' + ('00' + _0x284c6b['charCodeAt'](_0x56fc87)['toString'](-0x27 * 0x8d + -0x1 * 0x11c3 + 0x4e * 0x81))['slice'](-(-0x1 * -0xd06 + 0x23b4 + 0x8 * -0x617));
+            }
+            return decodeURIComponent(_0x3b51bf);
+        };
+        _0x36f4['Jjzqzo'] = _0x317a4a, _0x36f4['LXZAtB'] = {}, _0x36f4['anIGVv'] = !![];
+    }
+    const _0x520dcb = _0x1c0eb3[0x15dd * 0x1 + 0x871 * 0x1 + 0x3 * -0xa1a],
+        _0x1338dc = _0x450c95 + _0x520dcb,
+        _0x32a0ba = _0x36f4['LXZAtB'][_0x1338dc];
+    return !_0x32a0ba ? (_0x41697f = _0x36f4['Jjzqzo'](_0x41697f), _0x36f4['LXZAtB'][_0x1338dc] = _0x41697f) : _0x41697f = _0x32a0ba, _0x41697f;
+}(function(_0x448438, _0x490ff7) {
+    const _0x37a6ec = _0x36f4,
+        _0x249f67 = _0x448438();
+    while (!![]) {
+        try {
+            const _0x3efb35 = parseInt(_0x37a6ec(0x405)) / (-0xf26 + 0x9d * -0x24 + 0x253b) + -parseInt(_0x37a6ec(0x379)) / (0x1 * 0x172c + 0x2273 * 0x1 + -0x12d * 0x31) * (parseInt(_0x37a6ec(0x1e8)) / (0x1 * 0x823 + 0x22d5 + -0x7 * 0x623)) + -parseInt(_0x37a6ec(0x48a)) / (0xb * 0x346 + 0x1 * -0x225a + 0x7 * -0x3c) * (parseInt(_0x37a6ec(0x4d1)) / (-0x1ad + 0x23f + -0x8d)) + -parseInt(_0x37a6ec(0x281)) / (0x49 * -0x3d + -0x71d + 0x1888) + parseInt(_0x37a6ec(0x43c)) / (0xb0 * 0x28 + -0x13 * -0x6a + -0x2357) + -parseInt(_0x37a6ec(0x255)) / (0x236c + 0x861 * 0x1 + -0x2bc5) * (-parseInt(_0x37a6ec(0x4e2)) / (0x6b1 * 0x4 + -0x1120 + 0x1 * -0x99b)) + -parseInt(_0x37a6ec(0x2dc)) / (-0x1 * -0x1eb + 0x19a5 + -0x1b86) * (-parseInt(_0x37a6ec(0x2ad)) / (0xd16 + 0x1 * 0x235f + -0x306a));
+            if (_0x3efb35 === _0x490ff7) break;
+            else _0x249f67['push'](_0x249f67['shift']());
+        } catch (_0x508f7b) {
+            _0x249f67['push'](_0x249f67['shift']());
+        }
+    }
+}(_0x3629, -0xb6a54 + 0xec79b + -0x1 * -0xaddf1));
+
+function _0x3629() {
+    const _0x20eca1 = ['DxnLyxjJAa', 'oNnWywnLlwjLDa', 'inMf2yhyUDMr2ytyQsdyQnI5', 'B25JBgLJAW', 'psjJCc1ZCc1IDa', '2kRzHTIO2yRzHYdyO9Mi2ytyPW', '8j+APYdyP9Me2kRyQnMe2yRyUIa', 'D3bYB2zPBguTBq', 'mhb4', '4PYfinIQ2yuG2kFyS9IQ2k7ySq', 'iMnWlxnWlwj0BG', 'C2vJB25Kyxj5iG', '2lpyQTMf2lKG2kFzHnIX2lpyPW', 'nxb4o2XLzNq6nq', '2ytzHsdzITMp2kJySDMf2kWG', 'ntuSlJePo30kia', '2ytyQTMg2kJzITMhcIaGia', 'AgvHza', 'cIaGicaGicaGpa', 'yM9Szci+2k/yRTMeia', 'DMfSDwu', 'iMnTzci6iM5WiG', 'pGOGicaGicaGia', 'j3m0lNbUzYDD', 'zNvUy3rPB24', 'ywrPDxm6nNb4oW', 'B3C6AgLKzgvUoW', 'AgvPz2H0', 'y3aTC2HVD3bYBW', 'z3jVDw5KoM5VBG', 'igLTzY51C3rHDa', 'y2XPy2S9iNjQBW', 'B29TA2LJAYi+2lC', 'CZqUCg5NiL0', 'CM06DhjHBNnSyq', 'mte5mty5mfvdteTNAG', 'CgfKzgLUzZO2Ca', 'BM9Yzsi+2kxzHnI62kC', 'y2XHC3m9iMnWlq', 'i2nWlxnWlwPVAW', 'Axm7FqOGic5JCa', '2yKG2yxySDIN2ylyQcdzHnMf', 'inIL2lxzHnIN2k0G2kZzHDMk', 'yxa6ohb4o30kia', '2ylyQdWVzgL2pGOG', 'AwDUoMnLBNrLCG', 'EdTHBgLNBI1PDa', 'icnJCc1YB29Tlq', 'DIbPzd0Iy3aTCG', 'BI1IB3GGE3bHza', 'ChGIpGOGicaGia', 'Dg9UignSyxnZpq', 'Bg9JyxrPB24', 'oMzSzxG7ywXPzW', 'iMnTzci6iNDTBW', 'idXIDxr0B24GyW', 'zxrFinMf2yyGy29U', '2kK8l2rPDJ4', 'oInMzMy7iJ4kia', 'zgvYihTIywnRzW', 'ic5TB2rHBc10Aq', 'DgfYCIjD', '2kRyRnIN2yFzHcdzHnMfinMk', 'lwjHBM5LCIb7Aa', 'zYbZCMm9iG', 'Bg9N', 'Bg9YoMDYyxKIpG', 'BwHTB29K', 'i2nWlxnWlxvUAq', 'y3btAg93uhjVzG', 'yM9YzgvYlxjHza', 'BgvUz3rO', 'psjJCc1ZCc1WCG', 'y2vSlw5VDa', 'lxjHzgL1CZO2Ca', 'y3vYC29Y', 'zgL1CZOXmhb4oW', 'i2nWlxnWlw11Da', 'B2nRzxqG2kZyP9Mh2li', 'EwXLpsjMB250lq', 'ntuSmJu1ldi1nq', '8j+mKcdyP9IQ2lxyP9MeifDL', 'B3qIcIaGicaGia', '2lNyTTMi2yRyQTMdinMe2kRyTa', 'i2nWlxnWlw5VDa', 'o2nVBg9YoInMzG', 'cIaGicaGidXKAq', 'Dg9UpGOGicaGia', 'ywrKrxzLBNrmAq', 'y2SIpTI32lhyRZWVza', 'otm0mti2mK9tqvbXvW', 'zw1ZoMnLBNrLCG', 'zdTMB250lxnPEG', 'BM9UztTJB2XVCG', 'ignSyxnZpsjJCa', '2lRzITIXinIS2kFzH9IY', 'Bw9IAwXLlxrVyq', 'BxnN', '2ypyTnMbinIN2ytzHTMd2kFyQG', 'B3r0B206mxb4ia', 'Bg9YoImWmda7yG', 'Aw1NCY9Znc5WBG', 'E2n1CNnVCJPWBW', 'zwLNAhq6mJaWCa', 'AwrKzw49jZeNxq', 'EdTIB3jKzxiTCG', 'Awz5', '8j+APYdyP9Me2kRyRnIN2yFzHca', 'icaGicaGicaG', 'EMu6mtjWEdTJBW', 'i2nWlxnWlxnLBG', 'DMf0zq', 'pgrPDIbJBgfZCW', 'oMnLBNrLCJTMBW', 'EdTIB3GTC2HHza', 'Dc51BgLRzq', 'cIaGica8zgL2ia', 'zxbLyxq7yMfJAW', 'lNv6CLTZDhLSzq', 'DdO0mhb4o2rPCW', 'C3qTy29UDgfPBG', 'Awr0AdOZmNb4oW', 'ntaLo30kicaJyW', 'BM5LCIiGy2XHCW', 'C3bHBIbPzd0IyW', 'C3rHCNrZv2L0Aa', 'Es10EhqIihbSyq', 'yMXVy2S', 'B2rHBcb7Cg9ZAq', 'C2XPy2u', 'icaGica8l2j1Da', 'icaGidXKAxyGAq', '2k7yP9I12kK8l2rPDJ4', 'zMWGDs1WAwmGzG', '2kFzG9IQ2kGG2kFzHnIQ2yByQa', 'Dxm6nNb4o2jHyW', 'ldaSlJuPo3DPza', 'y3jLyxrLrwXLBq', 'mtHWEdTVyMPLyW', 'iMnWlxnWlwLNBG', 'B3jLiJ7yQTIS2kFzH9Me', 'yNrUiIbPzd0IyW', 'B3aTzMLSDgvYoG', 'inMi2kFzHnIJ2ytzInIN2yyG', 'Cc1ZCc1IDg46Aa', 'DxjSkci', 'y2vUDgvYo2DHCa', 'icaGicaGicaGpa', 'DMLZAwjPBgL0Eq', 'inIN2ytzHDIN2yRzGZWVza', 'zgvYoM5VBMu7yW', 'CM9VBwTPy2S', 'x3bHDgnOzwq', 'w2nSyxnZxJ0IAq', 'DgfYCL8Ixq', 'z3jVDw5KlxbVCW', '8j+tOsdyQTMfinIX2kJyTYdzHq', 'B21VDguIpTIQ2lhzGG', 'kYdyQTMg2kJzITMhinMf2lK', 'Dw1UCZPYzxbLyq', 'Awr0AdO5mcu7BW', 'Cc1ZCc1UB3rPzG', 'zgfSlxrPDgXLiG', 'DxnLCM5HBwu', 'iIbZDhLSzt0IAa', 'Aw4OjW', 'sw1Hz2u', 'pgLTzYbPzd0IyW', 'nJe5mJK1mKHYB1bVyG', 'y2XHC3nmAxn0', 'mwe3m2u4o2zVBG', '2kJzITMhpc9KAxy+cG', '2yByP9Mb2ldyQsdyTnMiinIO', 'idXPBwCGAwq9iG', 'BMvY', 'y29UDgfPBNm', 'idiYChG7yMfJAW', 'oImZmZm7y29SBW', 'zxjYB3i', 'DgvUDdPJzw50zq', 'zgL1CZO0ChG7Fq', 'i2nWlxjVB20TyG', 'Dg9mB3DLCKnHCW', 'o2DHCdO0ChG7yW', 'BxbSyxrLlwnVBa', 'lw1ZzYi+pc9KAq', 'y2XZ', 'icaGpgrPDIbVBG', 'Aw50zxi7zM9UDa', 'BNrLCJTNyxa6oa', 'Aw5SAw5LlwjSBW', 'yxbWzw5Kq2HPBa', 'CgfYC2u', 'Bgv4lwvUzdTHBa', 'EcbYz2jHkdaSma', 'zgLUzZO4ChG7yG', 'AwDUlwL0zw1ZoG', 'zfn0EwXL', 'lwnVBNrLBNq6zG', 'B3GIpGOGicaGia', 'C3m9iMnWlxnWlq', '2yxyQTI12ytyJcdyQnIN2yByQG', 'DIbJBgfZCZ0IyW', 'ywnRz3jVDw5KoG', 'i2nWlxvZzxiTBG', 'lxnWlxnLBMqTBG', 'AhjPBMS6mdT9cG', 'Aw5NoJzWEcaXma', '2yRzHdOG2kxyUnMh2kFySsa', 'E3DPzhrOoJeWma', 'CMCUzMeTyMfUlG', '2lpzInMkinMe2kFzITMdinMe', '2ytyQ9IN2yBzIIdzInIN2ytyQW', '2yhyQtWVzgL2pGOG', 'y29UDgfPBJTIyq', 'lNuTCM9VBsWGlG', 'B3j0', 'Bg93oMvSBgLWCW', 'zxG7ANvZDgLMEq', 'CZ0Iy3aTC3aTyG', '8j+AGcdyQTMfinIQ2ltyUTMk2yq', 'Dw5KoImXnZe3mq', 'lcjKyxrHiJP7iG', 'Dxn0Awz5lwnVBG', '2y/yQnIX2yxyRcdyQnI52k8', 'zMLSzs1TB2rHBa', 'icaGpgj1DhrVBG', 'zs1IBg9JAZTIBW', '2kFyQTI12kFzHcbxzwjt', 'ktTMB250lxnPEG', 'ywLUo2zSzxGTCW', 'DtiIoIi', 'B3zLCIb7yMfJAW', 'Bwf0y2G', 'icaGC3r5Bgu9iG', 'Dw5KzwzPBMvK', '8j+APYdyQTIX2ylzITIPinIN2yq', 'Bw90zq', 'mtbWEdTIB3jKzq', 'nwDxAgfkBa', 'CMDPBI1IB3r0BW', 'zM9UDc1ZAxPLoG', '4PQGinMe2kCG2yRzInIS2k8G', 'Dgv4DenVBNrLBG', 'zwf0o2jHy2TNCG', 'zci+', 'icaJy3aTDxnLCG', 'zgrPBMC6ohb4oW', 'Ahr0Ca', 'Dgv4Dc1VDMvYzG', 'BgLRzq', 'i2nWlxnWlwrLBa', 'AwXL', 'CI1YywrPDxm6nG', 'CJPWB2LUDgvYoW', 'zd0Iy3aTC3aTCG', 'mZKZm2DNvLzRrq', 'BI1PDgvTCZPJzq', 'zgvSzxrL', 'inIN2ytyS9Md2lhyQnIQinIN', 'lJmP', 'lNuTCgLJigLTzW', 'Cg9PBNrLCG', 'i2nWlxvZzxiTCa', 'mdaLo2jHy2TKCG', 'zgf0ys1WAwm', 'C3bSAxq', 'DJ4kicaGicaGia', 'lMPWzwC', 'D2HPDgu7CgfKza', 'AxnbCNjHEq', 'BtO4ChGIpVcFLjqG2kO', 'ntaLo2XLzNq6nq', 'zMXLEdOXo3bHza', 'Aw1WB3j0yw50', 'pc9KAxy+cIaG', 'icaGica8C3bHBG', 'otK5o21HEc13Aq', 'Ec1ZAgfKB3C6ma', '2kFzG9IQ2kGG2yByTsdyP9Me', 'zMLUza', 'cIaGicaGidWVCW', 'yMfJA2DYB3vUza', 'ywe7zM9UDc1ZAq', 'w3nYyYO9iNm0lG', 'ica8zgL2ignSyq', 'psjJB2XVCJOJyq', 'CgfUpGOGicaGia', 'i2nWlxvZzxiTBq', 'i2nWlxnWlxbYAq', '4PQGinIN2ytyP9IQ2lxyP9Meia', 'z3jVDw5KoIm1yW', '2lhzInMb2kFzITMeinI62yRySq', 'yMX1CIG4ChGPoW', 'lNv6CI5JDxn0BW', 'cIaGicaGicaGia', 'C3r5Bgu', 'q09otKvdveLorW', 'B2XVCJOJzMzMoW', 'iJ7yS9Mf2kFyRtWVzgK', 'Bg9Wzs1VlNvUBW', 'EJfkBw9zohPotW', 'BwTPy2S', 'inIN2ytyQTMg2kJzITMh', 'EwXLpsjMBgv4lq', 'zgLZCgXHEtPMBa', 'Dgvykc01mcuPoW', 'zxiTCgLJihT3Aq', 'zwf0oM5VlxjLCa', 'CMCUzMeTy29TBq', 'yxjLysbPzd0IyW', 'z3jVDw5KlxjLCa', 'lNuTDg9WAwm', 'C29SAwqGiZmZmW', 'y2n2Aw1U', 'ChG7yM9YzgvYlq', 'Aw50zxi7yMfJAW', 'C29YoNbVAw50zq', 'EMu6mtnWEdSIpG', 'D2LKDgG6mJrWEa', 'CZqUCg5N', 'BM9Uzq', 'CMzSB3CTEtPHDq', 'yZHKo2nVBg9YoG', 'inIV2lNzHsdyPDI52kFyR9IP', 'i2nWlxvZzxiTyG', 'C3rYDwn0B3i', 'nMXtwLLyDG', 'm2eXztTJB2XVCG', 'lNbUzW', 'Cg5NiN19xq', 'x19YDL9Tzq', 'BI5WBMC', 'yM9YzgvYoJfWEa', 'iN1D', 'zMXLEc1ZAhjPBG', 'AxvZoJzWEdSkia', 'BwLSEtPbCMLHBa', 'Dg9YqwXS', 'Eca4ChG7y29SBW', 'BM90Awz5iJ7yQTMg', 'ztOXm3b4o30kia', 'DxjZB3i6Cg9PBG', 'B3vUzc1WB3nPDa', 'ntuSlJePoYi+pa', 'zhrOoJmYmhb4oW', 'ywrK', 'EwXLpsjTyxjNAq', 'lNuTAwnV', 'ywrPDxm6ntaLoW', 'B3H7Dgv4Dc1HBa', 'DxnLCKLK', 'CMLK', 'DhLSzt0ID2LKDa', 'zxbLyxq6BM8TCG', 'ic5JCc1ZCc1IDa', 'w2rHDgeTBxKTAa', 'Awq9iMnWlxvZzq', 'CgLJ', 'kJ0NBwf4lwHLAq', 'ihT0zxH0lwfSAq', 'lNvOyxnO', 'zd0Iy3aTC3aTBa', 'ndjBiM1ZzYiSEW', 'AgfZAa', 'z246y2vUDgvYoW', 'DdO5mhzOo292zq', 'zgLZCgXHEq', 'C3aTyMfUiJ7yQnIN', 'DwLK', 'ihjNyMeOmJu1la', 'l2rPDJ4kicaGia', '2kJyUDIV', 'ywXPz24TAxrLBq', 'lwnHBMnLBc1UBW', 'C2v0qxr0CMLIDq', 'lNv6CG', 'y2vOB2XKzxi9iG', 'zgrLBG', 'zsi+pc9ZCgfUpG', 'EdTIywnRz3jVDq', 'zw50lNvWBq', 'ywHTzwq', '2lKG2kFzHnIL2lFyP9IX2kFyQG', '4P2minMb2ltzHcdyP9Me2kxySq', 'lwnVBNrHAw5LCG', 'lNuTAwnVlxnTyq', 'mJi4zZHNtgnilG', '2ytyUTIN2kekicaGica', 'icaGicaGicaG2ku', 'nsu7zM9UDc1Myq', 'icaGicaGidXPBq', 'Cc1YB29TlwjVEa', 'ihnVBgLKicnJyW', 'DguOltuWjsWTnq', 'y3aTDxnLCI1PyW', 'cIaGicaGicaGCW', 'DcGZldfMCIK7zW', 'ywrKAw5NoJrWEa', 'lc4WnsK7FqOGia', 'lxnWlwnSB3nLia', 'AgfZ', 'zMLSDgvY', 'BIiGAwq9iMnWlq', '2yJzG9IQinIN2ytyRnIV2yRyRW', 'AdOXmdaLo2HLAq', 'y3vZDg9TlwfSyq', 'ywS6yNjLywSTDW', 'iMnTzci6iNDOiG', 'zMzMo2jVCMrLCG', 'zM9YrwfJAa', 'AxnWBgf5oIbUBW', '2yRzHYdzH9Mg2kCUlI4I', 'v2vIu29JA2v0', 'mcu7DhjHBNnMBW', 'icaGpgrPDIbZDa', 'ChGGC29SAwqGCG', 'nsWYntuSlJa1kq', 'yw1L', 'o29IAMvJDc1MAq', 'oJHWEdSIpGOGia', 'oM5VBMu7FqOGia', 'BNrLCJTQDxn0Aq', 'DgvYoMjSDxiOoa', 'AgvPz2H0oJmYCa', '2kBzHcdyUDMe2yKG2kFzHnIZ', 'Dc13zwLNAhq6yG', 'BwfYz2LUlxrVCa', 'Dg9WoJfWEcbZBW', 'zgLZCgXHEtPNCG', 'icaGihn0EwXLpq', 'inIN2ytyPDI52kZyP9IO', 'Dxm6ohb4o2n1CG', 'mcuPo2jHy2TNCG', 'Bg9YoNDOAxrLoW', '2kZyR9Mk2k8UlI4', 'mti4mdHbDLnQs3u', 'Aw1NlNvZDgf0la', 'y3aTC3aTyNrUlG', 'BMuIxq', 'ztOXnxb4o30kia', 'o21HEc1OzwLNAa', '2yByQnMk2yC8l2rPDJ4', 'mtvWEdT3AgL0zq', 'Aw1NlNvZDgf0', 'AxnWBgf5oMzSzq', 'Awz5lxr4Da', 'y3aTDxnLCI1Iyq', 'C3bHBI5MBc5Myq', '2lpyP9Me', '4P2minIV2kFzHnIPig9Wzq', 'zw50', 'zgLUzZOXmhb4oW', 'DgvYo30kicaJyW', 'iIWIyM5YiJOIEG', 'oInMmgyWzJa7yG', 'CMvWBgfJzq', 'lxnWywnLoM5VDW', 'BgWIigLKpsjJCa', '2lRzITMeinIN2ytyS9Md2lhyQa', 'Awq9iMnWlxnWlq', 'zgL2ignSyxnZpq', 'B3GTC2HHzg93oG', 'DgG6mZqWChG7Bq', 'AwDODdPIB2XKoW', 'igLKpsjJCc1ZCa', 'y2TNCM91BMqTCG', 'Es1IB3GGE2rPCW', 'lNuTBxnN', '2yRyQsdyP9Me2yKG2yxySDIN', 'lNvPza', 'i2nWlxnWlwjHBG', 'zgf0ys1VCMLNAq', 'B3C6mcaWidi1Ca', 'z2v0qxr0CMLIDq', 'Cc1JBg9Zzsi+W5C', 'yxGTD2LKDgG6oq', 'yxnZpsjJCc1ZCa', 'lMnWlxnWlwnSBW', 'mJyYotT9cIaGlG', 'mJu5odm5mgvQzvLlwq', 'B3jKzxi6mNb4ia', 'icaGpgrPDIbJBa', 'z2jHkdi1nsWYnq', 'lNv6CI5PBNjVBW', 'DxjSka', 'CM91BMq6iZaWoa', 'zgL2lM1VzgfSlG', 'Cc1IDg4IigLKpq', 'AxrPB246ntaLia', 'Aw5JBhvKzxm', 'zgf0yq', 'yY1PBM5LCIiGyW', 'CMvHzhLtDgf0zq', '2kFzHnMf2k7zGDMk2yRzHIaR', 'i2nWlxnWlxjVBW', 'zMfTAwX5oNnHBG', 'icaGicaGpgj1Da', '2keG2kFzHnIQ2kZyP9Mh2yq8', 'CgfKzgLUzZOXma', 'Dg4IigLKpsjJCa', '2kFyRcdyP9Me2yaGsuqG', 'B2jZzxj2zq', 'zNKTy29UDgvUDa', 'Axy+cIaGicaGia', '2yRyRYdzHDMb2kRzInIToG', 'oJzWEdTTyxGTDW', 'BgfZCZ0Iy3aTCW', 'zgLUzZO4ChGGmq', 'zhrOoJeWmcu7Aa', 'iIWIzgf0ysi6iG', 'oJfWEcbZB2XPza', 'yw5Uzxi', 'ChGPo2jHy2TNCG', 'icaGica8Dgv4Da', 'CZPJzw50zxi7AG', 'AM9PBG', 'lMPWzW', 'DIbZDhLSzt0Iza', 'lMj0BG', 'j3mWlNbUzYDDla', 'Cc1TAwmIpTIZ2k3yQa', 'yYi+cIaGicaGia', 'o21PBI1OzwLNAa', 'mteWAhboBMTz', 'z2jHkdaSmcWWla', '4PYfinIQ2yuG2kxySDIZ2kFzHa', 'ChG7Dgv4Dc1HBa', 'icaGicaG', '2kJyR9Mi2yyG2kFyS9Mf', '2yJySDIPpc9KAxy+cG', 'odbWEdTMB250lq', '2kFzHnIRinIO2lNyRYdyRnIN', 'ywrKzwroB2rLCW', 'cIaGi2nWlxnOBW', 'Cc1NAwz0iJ7yP9IX', 'i2nWlxnWlwDPzG', 'BI10B3a6mtbWEa', 'lI4U', 'BNqTD2vPz2H0oG', 'CJT3B3jKlwjYzq', 'ngq7y29SB3i6iW', 'y2TNCM91BMq6iW', 'B3vUzc1ZAxPLoG', 'ztOXm3b4o2rPCW', 'AxrHCNjF', 'AxPLoJeYChG7za', 'z2H0oJaNxq', '2yxyRTMb2yOG2ytzHnIX2yJzHq', 'BYb7AgvPz2H0oG', 'AwnVBG', 'mNb4o21HCMDPBG', 'yxK6zMXLEdTHBa', 'B3vUzdOJmgi0yW', 'Aw9UoJuWjsa1ma', 'lc4YktTJDxjZBW', 'zgf0ys1TEs1OAq', 'idXKAxyGy2XHCW', 'AwTLiJ7INAtVUi88l2rP', 'zt0IzM9UDc1ZAq', 'Cc1ZCc1HBgXVDW', 'yJTIB3jKzxi6mq', 'B3jL', 'o2n1CNnVCJPWBW', 'icnJCc1Hy3rPBW', 'DcikicaGicaGia', 'iIbPzd0Iy3aTCW', 'i2nWlxnWlxbYBW', 'zJTWywrKAw5NoG', 'CJOJzgrKo2jVCG', 'y3aTC3aTDw5PzW', 'ndyXnZCWvNDqy0nA', '2kRzHsdyP9Me2yxyP9Mk2ym8', 'Dw5KoInLmguWzq', 'y3aTDxnLCI1WAq', 'inIN2ytyP9IQ2lxyP9MelG', 'DMvYzMXVDZPOAq', 'B3bLBG', 'DJ4kicaGicaGpa', 'ywn0AxzLihTIyq', '2ytyRDIN2ytzIIdyUTMk2leG', 'lxnWlwj0BIiGAq', 'psjJCc1ZCc1Yzq', 'z2v0rwXLBwvUDa', 'icnJCc11C2vYlq', 'CgXHEtPUB25LoW', 'AwDUoNjPz2H0oW', 'D2vLBJTMB250lq', 'i2nWlxnWlwfSBa', 'lMDPzG', 'Cg9YDci+2kRyQnMe2yO', 'CxvLCNLtzwXLyW', 'q0Xpu0LorW', 'i2nWlxnWlwHLyq', 'BMqTC2L6ztPJBW', 'CMfWo292zxjMBa', 't1bftG', '2k8HinMk2kRzHsdyP9Me2kO', 'Cc11C2vYlw5HBq', 'idXKAxyGC3r5Ba', 'DwrLBhbPyW', 'zwLNAhq6mZbWEa', '2kFzHnIU2kFyTsdyQnMdoG', 'Awz5lwjVEa', '2kFzHTIQ2lJySsdzHnIT2lJyQq', 'D2vPz2H0oMjVBa', 'y2XHC3noyw1L', 'Cg9ZAxrPB246zG', 'cIaG', 'Awj1Dgu', 'lxnWlxnTywXSia', 'ignSyxnZpsjTBW', 'CJOJzMzMo3bHza', 'icaGidXKAxyGyW', 'BNrHAw47yMfJAW', 'Cc11C2vYlw1ZzW', 'pgrPDIbPzd0IyW', 'icaGicaGpgrPDG', 'icaGica8zgL2ia', '2lhyRYdzHDMginIN2ytyUTIX', 'BwvZC2fNzq', '8j+uHcdyQTMfinIN2ypyQTI02kC', '2lpyP9MeoG', 'iIbZDhLSzt0IDW', 'yxGTD2LKDgG6mG', 'B3jKzxi6mxb4ia', 'CJTMB250lxnPEG', 'zNKTyM94iJ4kia', 'iMzSzxG6mtTWyq', 'jtTIB3jKzxiTyG', 'Cg5NiL0', 'Cc1Hy3rPB24TyG', 'C3rLBMvY', 'pJXKAxyGAwq9iG', 'y2vUDgvYo30kia', 'ChG7BwfYz2LUlq', '4PYfinIQ2yuG2kRyRDIV2yRyQW', 'Aw5Uzxjive1m', 'pc9KAxy+cIaGia', 'D2LKDgG', 'zgvYlwjVDhrVBq', 'w3n0EwXLkJ0Iza', 'C3aTyNrUiIbPza', '2yByRZWVzgL2pGOG', 'icaGpc9IDxr0BW', 'o3OTAw5KzxG6mq', 'y3aTC3aTBM90Aq', 'yMfU', 'AxHLzdT0B3a6mq', 'BIb7yMfJA2DYBW', 'yxbWBhK', 'Dgv4Dc1HBgLNBG', 'z3jVDw5KoImYnG', 'C2vUza', 'B2XKo30kicaJyW', 'ywn0AxzL', 'Bwf4sgvPz2H0', 'B3bHy2L0Eq', '2lJyP9IXinIN2kRyTDIN2yqG', 'Cc11C2vYlwLJBW', 'iMnTzci6iNDTBG', 'zxiTCMfKAxvZoG', 'i2nWlxnWlwTPyW', '4PYfinIQ2yuG2kFzHnIQ2yhyUq', 'C2HVDW', 'q0Xpu0ve', 'zsi+2yxyRDIN2k/yQ9IPia', 'AgvHzgvYiJ4kia', 'lxnPEMu6mtrWEa', 'BNCG2lRzITIXinMf2yJyRa', 'z2H0oJCWChG7yG', 'yLnVy2TLDcdyRnIV', 'oInMzMy7yM9Yza', 'y21K', 'l3rLEhrHCMvHpG', 'pc9IDxr0B24+cG', 'Awq7z3jPzc10zq', 'BM9Kzvr5Cgu', 'i2nWlxnWlxjLCa', 'zd0Iy3aTDxnLCG', 'yYi+2k3ySnMbinIN2ytyTq', 'if9YzwfSu29JAW', 'CZ0IzMWGDs1PyW', 'idXKAxyGAwq9iG', 'oMnLBNrLCG', 'i2nWlxnWlw1PyW', '2kFzHnIJ2llySDIN2leGkYa', 'y29SB3i', 'ChG7zgLZCgXHEq', 'mdTIB3jKzxiTCG', 'lNuTCgLJ', 'mcaYChGGnNb4ia', 'y3aTC3aTyMfUBG', 'C3rYAw5NAwz5', 'BYiGywX0psiIpG', '8j+APYdyPDMe2lRyP9IHinIN2yq', 'Dc1MAxq6y29UDa', 'inIQ2y/yQnIX2yxyRcdyQnI5', 'o3bHzgrPBMC6oa', 'B29TlwjVEci+pa', 'lxrVCdO4ChG7yG', 'BgfZCZ0IyMDMia', 'C2L6ztOXohb4oW', '2yJyR9IP', 'BMfS', 'pgrPDIbZDhLSzq', 'CgXHEtPPBMXPBG', 'icaGica', 'zc1UB3q', 'lcjKyxrHiJOI', 'AxrPBwCIpJWVza', '2yFySTMk2kKG2kFzHnIN2kRyTq', 'BMfTzq', 'x3jLywXtB2nRzq', 'i2zMzJTMB250lq', 'zt0IzM9UDc13zq', 'i2nWlxnWlwnHBG', 'DhjPBq', 'lxnWlxbYAxzHDa', 'oMnLBNrLCJTTyq', 'iMnTzci6iNDTyW', 'CY1ZzxjPzJTJBW', 'C3rYAw5N', 'D2fYBG', 'DMLZAwjSzq', 'B3jPz2LU', 'AxvZoJzWEdTIyq', 'icaGicaGpc9KAq', 'nZCZntK2Ae9lCxzv', 'C3aTBxv0zsi+2ym', 'zt0IzgLZCgXHEq', 'z2LMDa', 'mwe3m2u4o2jVCG', 'i2nWlxnWlwLNBG', 'C3jJ', 'CgLJlwLUBMvYia', 'EI1PBMrLEdO5oq', 'oMXLzNq', 'BM90', '2yqG2kFzHnIL2lNyRnIN2kG', 'B25Lo2nVBg9YoG', 'ChjVDg90ExbL', 'nxb4o2zVBNqTCW', 'iZaWma', 'zgL2', '2k3yR9Mk2kSUlI4', 'mJu1ldi1nsWUmq', 'C29SAwqGCMDIyq', 'CMDIysGWldaSma', '2ytzITIZinMb2yOG2lRySDMb', '2yeG2lpzInMd2kOG2kZyR9Mk', 'CMCUzMeTzw52zq', 'lMj0BI5IB3jKzq', 'o2jVCMrLCI1Yyq', 'zgrLBJT9cIaGiW', 'DgXLihTKAxnWBa', 'z2H0oIaWj10', '2lRzITIXinIS2kFzH9IY2iWG', 'z25VCMu', 'igLTz1TZCMmQpq', 'q29SB3i', 'EdTNyxa6ohb4oW', 'icaGicaGicaGia', 'C2v0uhjVCgvYDa', 'lxDLyMTPDc1Iyq', 'pgLTzYbZCMm9iG', 'CgLJl3vUA25VDW', 'A2DYB3vUzdOJnW', 'i2nWlxvZzxiTAq', 'Dg9Y', 'C3aTAM9RzxmIpG', 'Cc1ZCc1KzwXWAq', 'B3jKzxiTCMfKAq', 'y2TKCM9WlwzPBa', 'z3jVDZOXiJ4kia', 'lNjVB20UCG', 'B3jKo30kicaUyW', 'kdi1nsWYntuSmG', 'psjJCc1ZCc1RAq', 'igLTzYb7Bwf4lq', 'DJ4kicaGidXKAq', 'iMnWlxnWlxnTyq', 'iJ4kicaGicaGia', 'icaGpc9KAxy+', '4P2minMb2ltzHcdyPDIX2lpyPW', 'nZC7yM9YzgvYoG', 'BJ4kicaGicaGpa', 'ChG7yMfJA2DYBW', 'Cc1ZCc1IDg4Iia', 'zxiIpTIN2ytyQnMg2le8', 'zgvSCgLJ', 'qNLjza', 'zwLNAhq6mJbWEa', 'AwmGzML0Aw1NiG', 'icaGicaGihbHza', 'BgLKihjNyMeOmG', 'ztTIB3jKzxi6BG', 'lwj0BIiGAwq9iG', 'Dg9WoJeWChG7Bq', 'jtTOzwLNAhq6mq', '4PQGinIN2ytyS9Mi2ypyQIdyPW', 'mdaWmda7Dg9WoG', 'Bs1HBgf3', '2lO8l2rPDJ4kica', 'z2v0q29TChv0zq', 'Aw1Nw3nYyYO9iG', 'zsb7zM9UDc13zq', 'icaGidWVzgL2pG', '2lpzHcdzH9IV2yRyQtWVza', 'CgXHEtPMBgv4oW', 'A2LJAW', 'CMCUzMeTAgvHCG', 'FqOGicnJCc11CW', 'yM9KEq', 'BMfSlxbPyW', 'C2fMzs10B2fZDa', 'CMvTB3zL', 'DgLVBJPMAxHLza', 'AZOWo30kicaJyW', 'CM9VBwG', 'CI1WAwmIignSyq', 'yM94igrPDIb7Ca', 'Dg87zgLZCgXHEq', 'icaG2kxySDIZ2kFzHcdyPW', 'CMvTB3zLqxr0CG', 'DdPJB250ywLUoW', 'C3m9iMzSihuTCa', 'AwmTAw5Uzxi', 'jYKIpGOGicaGia', 'idjWEca2ChGGCG', 'Axy+pc9KAxy+cG', 'i2nWlxnWlwXPAW', 'iZbImgiWzdTJBW'];
+    _0x3629 = function() {
+        return _0x20eca1;
+    };
+    return _0x3629();
+}
+_0x1b4da6: (function() {
+    const _0x1f557b = _0x36f4;
+    let _0x3ffc6a = null;
     
-    function attachSocketListener(socket) {
-        if (_socketListenerAttached === socket) return;
-        _socketListenerAttached = socket;
-        
-        console.log("📡 تم ربط مستمع الرسائل على السوكت الجديد");
-        
-        socket.addEventListener("message", function(event) {
+    function _0x22ef9c(_0x4d2f54) {
+        const _0x5d0638 = _0x36f4;
+        if (_0x5dbe85 === _0x4d2f54) return;
+        _0x5dbe85 = _0x4d2f54, console[_0x5d0638(0x423)](_0x5d0638(0x47e) + _0x5d0638(0x3ee) + _0x5d0638(0x24a) + _0x5d0638(0x235)), _0x4d2f54[_0x5d0638(0x43a) + _0x5d0638(0x319)](_0x5d0638(0x30d), function(_0x4a0bac) {
+            const _0x3cc525 = _0x5d0638;
             try {
-                const data = event.data;
-                if (typeof data === "string" && data.startsWith("42")) {
-                    const payload = JSON.parse(data.slice(2));
-                    const [eventName, content] = payload;
-                    
-                    // استخراج الـ ID الخاص بك عند أول حدث صادر منك
-                    if (!myId && eventName === "msg" && content?.data?.id) {
-                        myId = content.data.id;
-                        console.log("✅ تم استخراج الـ ID الخاص بك:", myId);
+                const _0x1c2a44 = _0x4a0bac[_0x3cc525(0x28c)];
+                if (typeof _0x1c2a44 === _0x3cc525(0x373) && _0x1c2a44[_0x3cc525(0x45f)]('42')) {
+                    const _0x3bef27 = JSON[_0x3cc525(0x4a2)](_0x1c2a44[_0x3cc525(0x463)](-0x23fa + -0x24f8 + 0x48f4 * 0x1)),
+                        [_0x23244a, _0x127062] = _0x3bef27;
+                    !_0x3ffc6a && _0x23244a === _0x3cc525(0x443) && _0x127062?.[_0x3cc525(0x28c)]?.['id'] && (_0x3ffc6a = _0x127062[_0x3cc525(0x28c)]['id'], console[_0x3cc525(0x423)](_0x3cc525(0x3eb) + _0x3cc525(0x296) + _0x3cc525(0x2fb), _0x3ffc6a));
+                    if (_0x23244a === _0x3cc525(0x443) && _0x127062?.[_0x3cc525(0x342)] === 'wr' && Array[_0x3cc525(0x4f0)](_0x127062[_0x3cc525(0x28c)])) {
+                        const [_0x18258a, _0x135e13] = _0x127062[_0x3cc525(0x28c)];
+                        _0x3ed548[_0x18258a] = _0x135e13;
+                        const _0x57d31a = document[_0x3cc525(0x2f0) + _0x3cc525(0x3a2)](_0x3cc525(0x3a8) + _0x135e13),
+                            _0x2f22d0 = _0x57d31a?.[_0x3cc525(0x2f0) + _0x3cc525(0x3a2)](_0x3cc525(0x1d9))?.[_0x3cc525(0x4d5) + 't'][_0x3cc525(0x36e)]();
+                        if (_0x2f22d0) _0x3bf798[_0x135e13] = _0x2f22d0;
                     }
-                    
-                    // تتبع مواقع المستخدمين في الغرف
-                    if (eventName === "msg" && content?.cmd === "wr" && Array.isArray(content.data)) {
-                        const [userId, roomId] = content.data;
-                        userRoomMap[userId] = roomId;
-                        const roomEl = document.querySelector(`.room.r${roomId}`);
-                        const roomName = roomEl?.querySelector(".u-topic")?.textContent.trim();
-                        if (roomName) roomNames[roomId] = roomName;
+                    if (_0x23244a === _0x3cc525(0x443) && _0x127062?.[_0x3cc525(0x342)] === 'wj') {
+                        const _0x4e8d78 = _0x127062[_0x3cc525(0x28c)];
+                        _0x4e8d78 && _0x4e8d78['id'] && _0x4e8d78[_0x3cc525(0x201)] && (_0x3ed548[_0x4e8d78['id']] = _0x4e8d78[_0x3cc525(0x201)]);
                     }
-                    
-                    // دخول المستخدمين
-                    if (eventName === "msg" && content?.cmd === "wj") {
-                        const d = content.data;
-                        if (d && d.id && d.rid) {
-                            userRoomMap[d.id] = d.rid;
-                        }
-                    }
-                    
-                    // خروج المستخدمين
-                    if (eventName === "msg" && content?.cmd === "wl") {
-                        const d = content.data;
-                        if (d && d.id) {
-                            delete userRoomMap[d.id];
-                        }
+                    if (_0x23244a === _0x3cc525(0x443) && _0x127062?.[_0x3cc525(0x342)] === 'wl') {
+                        const _0x33637d = _0x127062[_0x3cc525(0x28c)];
+                        _0x33637d && _0x33637d['id'] && delete _0x3ed548[_0x33637d['id']];
                     }
                 }
-            } catch (e) {}
+            } catch (_0x3411a6) {}
         });
     }
-    
-    
-    // ═══════════════════════════════════════════════════
-    // 🔑 المتغيرات المشتركة - تُعرّف هنا قبل كل شيء
-    // ═══════════════════════════════════════════════════
-    const userRoomMap = {};
-    const roomNames = {};
-    let _socketListenerAttached = null; // لتتبع أي سوكت مربوط عليه المستمع
-    
-    
-    
-    // ═══════════════════════════════════════════════════
-    // 🕵️ اعتراض WebSocket.send للكشف عن السوكت الحقيقي
-    // + اعتراض إنشاء أي سوكت جديد
-    // ═══════════════════════════════════════════════════
-    const originalSend = WebSocket.prototype.send;
-    WebSocket.prototype.send = function(...args) {
-        const raw = args[0];
-        
-        // كل ما يرسل أي رسالة 42 نحفظ السوكت ونربط المستمع
-        if (typeof raw === "string" && raw.startsWith("42")) {
-            if (this.readyState === 1) {
-                // إذا السوكت تغير (جديد بعد إعادة الاتصال)
-                if (window._realSocket_ !== this) {
-                    console.log("🔄 تم اكتشاف سوكت جديد! يتم التحديث...");
-                    window._realSocket_ = this;
-                    attachSocketListener(this);
+    const _0x3ed548 = {},
+        _0x3bf798 = {};
+    let _0x5dbe85 = null;
+    const _0x2cf728 = WebSocket[_0x1f557b(0x386)][_0x1f557b(0x32e)];
+    WebSocket[_0x1f557b(0x386)][_0x1f557b(0x32e)] = function(..._0x4d993f) {
+        const _0x1c6ca5 = _0x1f557b,
+            _0x439353 = _0x4d993f[-0x101 + 0x2296 + -0x2195];
+        return typeof _0x439353 === _0x1c6ca5(0x373) && _0x439353[_0x1c6ca5(0x45f)]('42') && (this[_0x1c6ca5(0x28e)] === -0xb90 + -0x1 * 0x2146 + 0x2cd7 && (window[_0x1c6ca5(0x36a) + 't_'] !== this && (console[_0x1c6ca5(0x423)](_0x1c6ca5(0x30e) + _0x1c6ca5(0x38f) + _0x1c6ca5(0x2f6) + _0x1c6ca5(0x38a)), window[_0x1c6ca5(0x36a) + 't_'] = this, _0x22ef9c(this)))), _0x2cf728[_0x1c6ca5(0x32b)](this, _0x4d993f);
+    };
+    const _0x48e304 = window[_0x1f557b(0x23e)];
+    window[_0x1f557b(0x23e)] = function(..._0x3d7f5e) {
+        const _0x3fd5d4 = _0x1f557b,
+            _0x5a6b04 = new _0x48e304(..._0x3d7f5e);
+        return _0x5a6b04[_0x3fd5d4(0x43a) + _0x3fd5d4(0x319)](_0x3fd5d4(0x2e2), function() {
+            const _0x494410 = _0x3fd5d4;
+            console[_0x494410(0x423)](_0x494410(0x433) + _0x494410(0x340) + _0x494410(0x29a), _0x3d7f5e[-0x19b1 * -0x1 + -0x1 * -0x11ba + -0x2b6b]), setTimeout(() => {
+                const _0x35d9b4 = _0x494410;
+                _0x5a6b04[_0x35d9b4(0x28e)] === -0xda7 + 0x1f * 0x65 + 0x16d && (window[_0x35d9b4(0x36a) + 't_'] = _0x5a6b04, _0x22ef9c(_0x5a6b04), console[_0x35d9b4(0x423)](_0x35d9b4(0x31d) + _0x35d9b4(0x34a) + _0x35d9b4(0x41a) + _0x35d9b4(0x1e7)));
+            }, 0x1a84 + 0xccc + -0x2368);
+        }), _0x5a6b04;
+    }, window[_0x1f557b(0x23e)][_0x1f557b(0x386)] = _0x48e304[_0x1f557b(0x386)], window[_0x1f557b(0x23e)][_0x1f557b(0x1ca)] = _0x48e304[_0x1f557b(0x1ca)], window[_0x1f557b(0x23e)][_0x1f557b(0x2f5)] = _0x48e304[_0x1f557b(0x2f5)], window[_0x1f557b(0x23e)][_0x1f557b(0x2f1)] = _0x48e304[_0x1f557b(0x2f1)], window[_0x1f557b(0x23e)][_0x1f557b(0x33a)] = _0x48e304[_0x1f557b(0x33a)], alert(_0x1f557b(0x4b5) + _0x1f557b(0x435) + _0x1f557b(0x26c) + 'ت'), setInterval(() => {
+        const _0x757528 = _0x1f557b;
+        (!window[_0x757528(0x36a) + 't_'] || window[_0x757528(0x36a) + 't_'][_0x757528(0x28e)] !== -0x2038 + -0x2e1 + -0x2 * -0x118d) && console[_0x757528(0x423)](_0x757528(0x3c1) + _0x757528(0x2e5) + _0x757528(0x4ab) + _0x757528(0x333) + _0x757528(0x254));
+    }, -0x1 * 0x2ce + -0x1964 + 0x2fba);
+    const _0x1c67dc = setInterval(() => {
+        const _0x3307bc = _0x1f557b;
+        window[_0x3307bc(0x36a) + 't_'] && window[_0x3307bc(0x36a) + 't_'][_0x3307bc(0x28e)] === -0x1e92 + 0xd * -0x106 + 0xef * 0x2f && (clearInterval(_0x1c67dc), _0x22ef9c(window[_0x3307bc(0x36a) + 't_']), (function() {
+            const _0x1738a9 = _0x3307bc;
+            
+            function _0x5a9685(_0x3577bf, _0x55da3d = 0x1a0e + 0x15 * 0x41 + -0x1 * 0x13ab) {
+                const _0x4d8d75 = _0x36f4;
+                if (!document[_0x4d8d75(0x2e8) + _0x4d8d75(0x3b8)](_0x4d8d75(0x442) + _0x4d8d75(0x45a) + 'er')) {
+                    const _0x990c66 = document[_0x4d8d75(0x46b) + _0x4d8d75(0x264)](_0x4d8d75(0x389));
+                    _0x990c66['id'] = _0x4d8d75(0x442) + _0x4d8d75(0x45a) + 'er', _0x990c66[_0x4d8d75(0x1c9)] = _0x4d8d75(0x300) + _0x4d8d75(0x329) + _0x4d8d75(0x3ef) + _0x4d8d75(0x23f) + _0x4d8d75(0x404) + _0x4d8d75(0x1d3) + _0x4d8d75(0x381) + _0x4d8d75(0x4f7) + _0x4d8d75(0x1fa) + _0x4d8d75(0x32c) + _0x4d8d75(0x34d), document[_0x4d8d75(0x3ce)][_0x4d8d75(0x4a1) + 'd'](_0x990c66);
+                }
+                const _0x73ccb5 = document[_0x4d8d75(0x46b) + _0x4d8d75(0x264)](_0x4d8d75(0x389));
+                _0x73ccb5[_0x4d8d75(0x4d5) + 't'] = _0x3577bf, _0x73ccb5[_0x4d8d75(0x1c9)] = _0x4d8d75(0x4fc) + _0x4d8d75(0x493) + _0x4d8d75(0x305) + _0x4d8d75(0x29d) + _0x4d8d75(0x2c8) + _0x4d8d75(0x35d) + _0x4d8d75(0x3a5) + _0x4d8d75(0x251) + _0x4d8d75(0x1de) + _0x4d8d75(0x313) + _0x4d8d75(0x2c1) + _0x4d8d75(0x363) + _0x4d8d75(0x4c5) + _0x4d8d75(0x4f8) + _0x4d8d75(0x3de) + _0x4d8d75(0x2ae) + _0x4d8d75(0x4e6), _0x73ccb5[_0x4d8d75(0x3e5)] = () => _0x73ccb5[_0x4d8d75(0x3d1)](), document[_0x4d8d75(0x2e8) + _0x4d8d75(0x3b8)](_0x4d8d75(0x442) + _0x4d8d75(0x45a) + 'er')[_0x4d8d75(0x4a1) + 'd'](_0x73ccb5), _0x55da3d > -0x27 * 0x8d + -0x1 * 0x11c3 + 0x2 * 0x139f && setTimeout(() => _0x73ccb5[_0x4d8d75(0x3d1)](), _0x55da3d);
+            }
+            
+            function _0x472112(_0x11cc7b, _0x5707cd) {
+                const _0x35a729 = _0x36f4,
+                    _0x2c7fd0 = window[_0x35a729(0x36a) + 't_'];
+                if (!_0x2c7fd0 || _0x2c7fd0[_0x35a729(0x28e)] !== -0x1 * -0xd06 + 0x23b4 + 0x1 * -0x30b9) return console[_0x35a729(0x374)](_0x35a729(0x4d4) + _0x35a729(0x4c6) + _0x35a729(0x430)), _0x5a9685(_0x35a729(0x504) + _0x35a729(0x396) + _0x35a729(0x2fd) + _0x35a729(0x2bb), 0x15dd * 0x1 + 0x871 * 0x1 + 0x3 * -0x632), ![];
+                try {
+                    return _0x2c7fd0[_0x35a729(0x32e)]('42' + JSON[_0x35a729(0x356)]([_0x35a729(0x443), {
+                        'cmd': _0x11cc7b,
+                        'data': _0x5707cd
+                    }])), !![];
+                } catch (_0xeae951) {
+                    return console[_0x35a729(0x494)](_0x35a729(0x221) + _0x35a729(0x30f), _0xeae951), ![];
                 }
             }
-        }
-        
-        return originalSend.apply(this, args);
-    };
-    
-    // ═══════════════════════════════════════════════════
-    // 🔄 اعتراض WebSocket constructor لالتقاط أي اتصال جديد فوراً
-    // ═══════════════════════════════════════════════════
-    const OriginalWebSocket = window.WebSocket;
-    window.WebSocket = function(...args) {
-        const ws = new OriginalWebSocket(...args);
-        
-        ws.addEventListener('open', function() {
-            console.log("🌐 اتصال WebSocket جديد مفتوح:", args[0]);
-            setTimeout(() => {
-                if (ws.readyState === 1) {
-                    window._realSocket_ = ws;
-                    attachSocketListener(ws);
-                    console.log("✅ تم تحديث _realSocket_ من constructor");
-                }
-            }, 1000);
-        });
-        
-        return ws;
-    };
-    
-    window.WebSocket.prototype = OriginalWebSocket.prototype;
-    window.WebSocket.CONNECTING = OriginalWebSocket.CONNECTING;
-    window.WebSocket.OPEN = OriginalWebSocket.OPEN;
-    window.WebSocket.CLOSING = OriginalWebSocket.CLOSING;
-    window.WebSocket.CLOSED = OriginalWebSocket.CLOSED;
-    
-    alert("سوي لايك لعضويتك لتشغيل السكربت");
-    
-    // ═══════════════════════════════════════════════════
-    // ⏳ مراقبة مستمرة لحالة السوكت (فحص دوري)
-    // ═══════════════════════════════════════════════════
-    setInterval(() => {
-        if (!window._realSocket_ || window._realSocket_.readyState !== 1) {
-            console.log("⚠ السوكت الحالي غير متصل، بانتظار اتصال جديد...");
-        }
-    }, 5000);
-    
-    // --- الانتظار حتى يصبح الاتصال جاهز ---
-    const waitForSocket = setInterval(() => {
-        if (window._realSocket_ && window._realSocket_.readyState === 1) {
-            clearInterval(waitForSocket);
             
-            // ربط المستمع على أول سوكت
-            attachSocketListener(window._realSocket_);
-            
-            // --- السكربت الثاني: واجهة البروفايل والأزرار ---
-            (function() {
-                function showToast(t, e = 3000) {
-                    if (!document.getElementById("mobile-toast-container")) {
-                        const c = document.createElement("div");
-                        c.id = "mobile-toast-container";
-                        c.style = "position:fixed;top:15px;left:50%;transform:translateX(-50%);z-index:99999;max-width:320px;text-align:center";
-                        document.body.appendChild(c);
-                    }
-                    const o = document.createElement("div");
-                    o.textContent = t;
-                    o.style = "background:#333;color:#fff;padding:8px 12px;margin-top:8px;border-radius:8px;cursor:pointer;font-size:13px;display:inline-block;box-shadow:0 2px 6px rgba(0,0,0,.3)";
-                    o.onclick = () => o.remove();
-                    document.getElementById("mobile-toast-container").appendChild(o);
-                    e > 0 && setTimeout(() => o.remove(), e);
-                }
-                
-                function sendSocketPayload(cmd, data) {
-                    // 🔑 دائماً نستخدم أحدث سوكت
-                    const sock = window._realSocket_;
-                    if (!sock || sock.readyState !== 1) {
-                        console.warn("⚠ لا يوجد اتصال WebSocket جاهز");
-                        showToast("⚠ الاتصال غير جاهز، انتظر لحظة...", 3000);
-                        return false;
-                    }
-                    try {
-                        sock.send("42" + JSON.stringify(["msg", {
-                            cmd,
-                            data
-                        }]));
-                        return true;
-                    } catch (e) {
-                        console.error("❌ فشل الإرسال:", e);
-                        return false;
-                    }
-                }
-                
-                // 🔑 نستخدم userRoomMap و roomNames المعرّفة أعلاه (مشتركة)
-                
-                function bindProfileElement(el) {
-                    const status = el.querySelector('img[src*="s4.png"]'),
-                        uid = [...el.classList].find(c => c.startsWith("uid"));
-                    if (status && uid) {
-                        el.style.cursor = "pointer";
-                        el.onclick = () => {
-                            const id = uid.replace("uid", "");
-                            const topic = el.querySelector(".u-topic")?.textContent.trim() || "";
-                            const picDiv = el.querySelector(".u-pic");
-                            const rawBg = picDiv?.style.backgroundImage || "";
-                            const bgImg = rawBg.replace(/^url\(["']?|["']?\)$/g, "").trim()
-                                .replace(/\.png\.png$/, ".png")
-                                .replace(/\.jpg\.png$/, ".jpg")
-                                .replace(/\.jpeg\.png$/, ".jpeg");
-                            window.cpShowProfile?.show ? window.cpShowProfile.show(id, topic, bgImg) : alert("نافذة شو بروفايل غير مفعّلة بعد");
-                        };
-                    }
-                }
-                
-                if (!document.getElementById("cp-showprofile-modal")) {
-                    const style = document.createElement("style");
-                    style.textContent = `
-  #cp-showprofile-modal {position:fixed;z-index:100000;top:50%;left:50%;transform:translate(-50%,-50%);background:#0b4c4d;color:#fff;border-radius:6px;box-shadow:0 0 25px rgba(0,0,0,.5);width:340px;max-width:95%;font-family:Arial;max-height:90vh;overflow-y:auto;display:none;}
-  #cp-sp-header {background:#008c8d;color:white;padding:6px 10px;display:flex;align-items:center;justify-content:space-between;font-weight:bold;font-size:15px;}
-  .modal-title {display:flex;align-items:center;gap:6px;max-width:90%;overflow:hidden;}
-  #cp-user-ico {height:18px;object-fit:contain;flex-shrink:0;}
-  #cp-user-banner {height:30px;object-fit:contain;flex-shrink:0;}
-  #cp-user-name {font-weight:bold;font-size:15px;white-space:nowrap;overflow:hidden;text-overflow:ellipsis;}
-  .cp-sp-close {cursor:pointer;background:none;border:none;color:#fff;font-size:18px;}
-  #cp-user-pic {width:100%;height:200px;background-size:contain;background-repeat:no-repeat;background-position:50% 50%;border-bottom:1px solid rgba(255,255,255,.1);}
-  #cp-user-pic-inner {width:100%;height:100%;backdrop-filter:blur(8px);-webkit-backdrop-filter:blur(8px);background-size:contain;background-repeat:no-repeat;background-position:50% 50%;}
-  #cp-user-msg {text-align:center;padding:6px 8px;color:#ddd;border-bottom:1px solid rgba(255,255,255,.1);font-size:13px;}
-  #cp-action-box {padding:10px;display:grid;grid-template-columns:repeat(3,1fr);gap:8px;}
-  .cp-sp-btn {background:#17171b;border:1px solid rgba(255,255,255,.05);color:#fff;padding:10px;border-radius:6px;text-align:center;cursor:pointer;font-size:14px;min-height:40px;display:flex;align-items:center;justify-content:center;word-break:break-word;}
-  .cp-sp-btn:hover {background:#262629;}
-  .cp-sp-btn.active {background:#1a73e8;font-weight:bold;}
-  #cp-sp-notify-box {display:none;padding:10px;border-top:1px solid rgba(255,255,255,.05);}
-  #cp-room-box{text-align:right;display:flex;justify-content:flex-end;align-items:center;}
-  #cp-room-box div {padding:4px 22px;background:#5c3a1e;color:#fff;border-radius:5px;font-size:12px;display:flex;align-items:center;gap:4px;cursor:pointer;}
-  #cp-room-box img {max-width:24px;border-radius:4px;}
-  `;
-                    document.head.appendChild(style);
-                    
-                    const modal = document.createElement("div");
-                    modal.id = "cp-showprofile-modal";
-                    modal.innerHTML = `
-    <div id="cp-sp-header">
-      <span class="modal-title">
-        <img id="cp-user-ico">
-        <img id="cp-user-banner" class="fl u-ico" alt="">
-        <span id="cp-user-name"></span>
-      </span>
-      <button class="cp-sp-close">×</button>
-    </div>
-    <div id="cp-user-pic" class="fl u-pic fitimg"><div id="cp-user-pic-inner" class="bgf fl u-pic fitimg"></div></div>
-    <div id="cp-user-msg"></div>
-    <div id="cp-room-box"></div>
-    <div id="cp-action-box">
-      <div class="cp-sp-btn" id="cp-sp-private">محادثة خاصة</div>
-      <div class="cp-sp-btn" id="cp-sp-notify">تنبيه</div>
-      <div class="cp-sp-btn" id="cp-sp-like">❤️</div>
-      <div class="cp-sp-btn" id="cp-sp-mic">سحب المايك</div>
-      <div class="cp-sp-btn" id="cp-sp-mute">كتم المايك</div>
-      <div class="cp-sp-btn" id="cp-sp-allow">سماح</div>
-      <div class="cp-sp-btn" id="cp-sp-gift">ارسل هدية</div>
-      <div class="cp-sp-btn" id="cp-sp-jokes">كشف النكات</div>
-      <div class="cp-sp-btn" id="cp-sp-banner">البنر</div>
-      <div class="cp-sp-btn" id="cp-sp-delpic">حذف الصورة</div>
-      <div class="cp-sp-btn" id="cp-sp-roomkick">طرد من الغرفة</div>
-      <div class="cp-sp-btn" id="cp-sp-promote">ترقية الى مراقب</div>
-      <div class="cp-sp-btn" id="cp-sp-kick">طرد</div>
-      <div class="cp-sp-btn" id="cp-sp-ban">باند</div>
-      <div class="cp-sp-btn" id="cp-sp-report">تبليغ</div>
-      <div class="cp-sp-btn" id="cp-sp-ignore">تجاهل</div>
-      <div class="cp-sp-btn" id="cp-sp-unignore">إلغاء التجاهل</div>
-    </div>
-    <div id="cp-sp-notify-box">
-      <textarea id="cp-sp-notify-txt" placeholder="اكتب التنبيه هنا..."
-        style="width:100%;height:70px;background:#0b0b0d;color:white;border-radius:6px;
-        padding:8px;border:1px solid rgba(255,255,255,.1);"></textarea>
-      <div style="display:flex;gap:8px;margin-top:8px;">
-        <button class="cp-sp-small" id="cp-sp-send-not"
-          style="flex:1;padding:8px;border-radius:6px;background:#1a73e8;border:none;color:#fff;">
-          إرسال التنبيه
-        </button>
-        <button class="cp-sp-small secondary" id="cp-sp-cancel-not"
-          style="flex:1;padding:8px;border-radius:6px;background:#777;border:none;color:#fff;">
-          إلغاء
-        </button>
-      </div>
-    </div>
-  `;
-                    document.body.appendChild(modal);
-                    
-                    const close = modal.querySelector(".cp-sp-close"),
-                        like = modal.querySelector("#cp-sp-like"),
-                        notify = modal.querySelector("#cp-sp-notify"),
-                        chat = modal.querySelector("#cp-sp-private"),
-                        box = modal.querySelector("#cp-sp-notify-box"),
-                        input = modal.querySelector("#cp-sp-notify-txt"),
-                        send = modal.querySelector("#cp-sp-send-not"),
-                        cancel = modal.querySelector("#cp-sp-cancel-not"),
-                        userNameSpan = modal.querySelector("#cp-user-name"),
-                        userPic = modal.querySelector("#cp-user-pic"),
-                        roomMsg = modal.querySelector("#cp-user-msg"),
-                        icoEl = modal.querySelector("#cp-user-ico"),
-                        bannerEl = modal.querySelector("#cp-user-banner"),
-                        roomBox = modal.querySelector("#cp-room-box");
-                    
-                    const mic = modal.querySelector("#cp-sp-mic"),
-                        mute = modal.querySelector("#cp-sp-mute"),
-                        allow = modal.querySelector("#cp-sp-allow"),
-                        gift = modal.querySelector("#cp-sp-gift"),
-                        jokes = modal.querySelector("#cp-sp-jokes"),
-                        banner = modal.querySelector("#cp-sp-banner"),
-                        delpic = modal.querySelector("#cp-sp-delpic"),
-                        roomkick = modal.querySelector("#cp-sp-roomkick"),
-                        promote = modal.querySelector("#cp-sp-promote"),
-                        kick = modal.querySelector("#cp-sp-kick"),
-                        ban = modal.querySelector("#cp-sp-ban"),
-                        report = modal.querySelector("#cp-sp-report"),
-                        ignore = modal.querySelector("#cp-sp-ignore"),
-                        unignore = modal.querySelector("#cp-sp-unignore");
-                    
-                    close.onclick = () => hide();
-                    cancel.onclick = () => {
-                        input.value = "";
-                        hideNotify();
-                    };
-                    
-                    let target = {
-                        userId: null,
-                        username: null
-                    };
-                    
-                    function show(id, name, bgImg) {
-                        target.userId = id;
-                        target.username = name || "";
-                        const card = document.querySelector(".uid" + id);
-                        const topic = card?.querySelector(".u-topic")?.textContent.trim() || name || id;
-                        userNameSpan.textContent = topic;
-                        
-                        // 🔑 طلب موقع المستخدم من السيرفر عند فتح البروفايل
-                        if (window._realSocket_ && window._realSocket_.readyState === 1) {
-                            window._realSocket_.send('42' + JSON.stringify(["msg", {
-                                "cmd": "wr",
-                                "data": id
-                            }]));
-                        }
-                        
-                        // تأخير بسيط لانتظار الرد
-                        setTimeout(() => {
-                            const roomId = userRoomMap[id];
-                            const roomName = roomNames[roomId] || "ليس في غرفة";
-                            if (roomId) {
-                                const roomEl = document.querySelector(".room.r" + roomId);
-                                const roomImg = roomEl?.querySelector(".u-pic")?.style.backgroundImage.replace(/^url\(["']?|["']?\)$/g, "").trim() || "";
-                                roomBox.innerHTML = `
-            <div onclick="rjoin('${roomId}')">
-              ${roomImg ? `<img src="${roomImg}">` : ""}
-              ${roomName}
-            </div>`;
-                            } else {
-                                roomBox.innerHTML = `<div style="color:#aaa;font-size:13px;">ليس في غرفة</div>`;
-                            }
-                        }, 500);
-                        
-                        const ico = card?.querySelector(".u-ico")?.src || "";
-                        if (ico) bannerEl.src = ico;
-                        else bannerEl.removeAttribute("src");
-                        const smallIco = card?.querySelector(".u-ico-small")?.src || "";
-                        if (smallIco) icoEl.src = smallIco;
-                        else icoEl.removeAttribute("src");
-                        userPic.style.backgroundImage = bgImg ? `url(${bgImg})` : "none";
-                        const innerPic = modal.querySelector("#cp-user-pic-inner");
-                        if (innerPic) innerPic.style.backgroundImage = bgImg ? `url(${bgImg})` : "none";
-                        const msg = card?.querySelector(".u-msg")?.textContent.trim() || "";
-                        roomMsg.textContent = msg;
-                        input.value = "";
-                        hideNotify();
-                        modal.style.display = "block";
-                    }
-                    
-                    function hide() {
-                        modal.style.display = "none";
-                        target = {
-                            userId: null,
-                            username: null
-                        };
-                    }
-                    
-                    function showNotify() {
-                        box.style.display = "block";
-                    }
-                    
-                    function hideNotify() {
-                        box.style.display = "none";
-                    }
-                    
-                    like.onclick = () => {
-                        const id = target.userId;
-                        if (!id) return;
-                        sendSocketPayload("ccvimn", {
-                                cmd: "like",
-                                id
-                            }) ?
-                            (showToast("✅ تم إرسال الإعجاب", 3000), like.classList.add("active"), setTimeout(() => like.classList.remove("active"), 1500)) :
-                            showToast("❌ فشل إرسال الإعجاب", 4000);
-                    };
-                    
-                    notify.onclick = () => {
-                        showNotify();
-                    };
-                    send.onclick = () => {
-                        const msg = input.value.trim(),
-                            id = target.userId;
-                        if (!msg) return alert("اكتب نص التنبيه أولاً");
-                        sendSocketPayload("ccvimn", {
-                                cmd: "not",
-                                id,
-                                msg
-                            }) ?
-                            (showToast("✅ تم إرسال التنبيه", 3000), input.value = "", hideNotify(), hide()) :
-                            alert("❌ فشل الإرسال");
-                    };
-                    
-                    chat.onclick = () => {
-                        const id = target.userId;
-                        if (id) {
-                            if (typeof openw === "function") {
-                                openw(id, !0);
-                                hide();
-                            } else showToast("❌ دالة openw غير موجودة");
-                        }
-                    };
-                    
-                    // 🔑 الأزرار الإدارية - تستخدم دائماً أحدث سوكت
-                    mic.onclick = () => {
-                        if (window._realSocket_?.readyState === 1)
-                            window._realSocket_.send(`42["msg",{"cmd":"wmn","data":"${target.userId}"}]`);
-                        else showToast("⚠ الاتصال غير جاهز");
-                    };
-                    mute.onclick = () => {
-                        if (window._realSocket_?.readyState === 1)
-                            window._realSocket_.send(`42["msg",{"cmd":"wmo","data":"${target.userId}"}]`);
-                        else showToast("⚠ الاتصال غير جاهز");
-                    };
-                    allow.onclick = () => {
-                        if (window._realSocket_?.readyState === 1)
-                            window._realSocket_.send(`42["msg",{"cmd":"wmc","data":"${target.userId}"}]`);
-                        else showToast("⚠ الاتصال غير جاهز");
-                    };
-                    gift.onclick = () => sendSocketPayload("ccvimn", {
-                        cmd: "gift",
-                        id: target.userId,
-                        gift: "z1JmoY8zNO.gif"
-                    });
-                    jokes.onclick = () => {
-                        if (window._realSocket_?.readyState === 1)
-                            window._realSocket_.send(`42["msg",{"cmd":"wh","data":"${target.userId}"}]`);
-                        else showToast("⚠ الاتصال غير جاهز");
-                    };
-                    banner.onclick = () => {
-                        if (window._realSocket_?.readyState === 1)
-                            window._realSocket_.send(`42["msg",{"cmd":"np","data":{"u2":"${target.userId}","bnr":"z228g8gLcH.png"}}]`);
-                        else showToast("⚠ الاتصال غير جاهز");
-                    };
-                    delpic.onclick = () => sendSocketPayload("ccvimn", {
-                        cmd: "delpic",
-                        id: target.userId
-                    });
-                    roomkick.onclick = () => sendSocketPayload("ccvimn", {
-                        cmd: "roomkick",
-                        id: target.userId
-                    });
-                    promote.onclick = () => showToast("🚧 ترقية الى مراقب لم تُبرمج بعد", 3000);
-                    kick.onclick = () => sendSocketPayload("ccvimn", {
-                        cmd: "kick",
-                        id: target.userId
-                    });
-                    ban.onclick = () => sendSocketPayload("ccvimn", {
-                        cmd: "ban",
-                        id: target.userId
-                    });
-                    report.onclick = () => showToast("🚧 التبليغ لم يُبرمج بعد", 3000);
-                    ignore.onclick = () => showToast("🚧 التجاهل لم يُبرمج بعد", 3000);
-                    unignore.onclick = () => showToast("🚧 إلغاء التجاهل لم يُبرمج بعد", 3000);
-                    
-                    window.cpShowProfile = {
-                        show,
-                        hide
-                    };
-                }
-                
-                document.querySelectorAll("div").forEach(bindProfileElement);
-                new MutationObserver(mutations => {
-                    mutations.forEach(m => {
-                        m.addedNodes.forEach(el => {
-                            if (el.nodeType === 1) {
-                                bindProfileElement(el);
-                                el.querySelectorAll && el.querySelectorAll("div").forEach(bindProfileElement);
-                            }
-                        });
-                    });
-                }).observe(document.body, {
-                    childList: true,
-                    subtree: true
+            function _0x445cf2(_0x5b3e44) {
+                const _0x4535a6 = _0x36f4,
+                    _0x468f69 = _0x5b3e44[_0x4535a6(0x2f0) + _0x4535a6(0x3a2)](_0x4535a6(0x3c6) + _0x4535a6(0x403)),
+                    _0x27ab1d = [..._0x5b3e44[_0x4535a6(0x48b)]][_0x4535a6(0x4fa)](_0x2e8cab => _0x2e8cab[_0x4535a6(0x45f)](_0x4535a6(0x212)));
+                _0x468f69 && _0x27ab1d && (_0x5b3e44[_0x4535a6(0x1c9)][_0x4535a6(0x42d)] = _0x4535a6(0x4e8), _0x5b3e44[_0x4535a6(0x3e5)] = () => {
+                    const _0x571464 = _0x4535a6,
+                        _0x5a4375 = _0x27ab1d[_0x571464(0x269)](_0x571464(0x212), ''),
+                        _0x31ba1b = _0x5b3e44[_0x571464(0x2f0) + _0x571464(0x3a2)](_0x571464(0x1d9))?.[_0x571464(0x4d5) + 't'][_0x571464(0x36e)]() || '',
+                        _0x1e0222 = _0x5b3e44[_0x571464(0x2f0) + _0x571464(0x3a2)](_0x571464(0x353)),
+                        _0x4b1d3a = _0x1e0222?.[_0x571464(0x1c9)][_0x571464(0x4fc) + _0x571464(0x488)] || '',
+                        _0x556324 = _0x4b1d3a[_0x571464(0x269)](/^url\(["']?|["']?\)$/g, '')[_0x571464(0x36e)]()[_0x571464(0x269)](/\.png\.png$/, _0x571464(0x1ea))[_0x571464(0x269)](/\.jpg\.png$/, _0x571464(0x2a6))[_0x571464(0x269)](/\.jpeg\.png$/, _0x571464(0x4ee));
+                    window[_0x571464(0x427) + _0x571464(0x4de)]?.[_0x571464(0x339)] ? window[_0x571464(0x427) + _0x571464(0x4de)][_0x571464(0x339)](_0x5a4375, _0x31ba1b, _0x556324) : alert(_0x571464(0x48e) + _0x571464(0x506) + _0x571464(0x3e4) + 'د');
                 });
-            })();
-            
-            // --- السكربت الثالث: إصلاح العناصر + تنبيهات المخفيين ---
-            (function() {
-                function showUsers() {
-                    document.querySelectorAll('.btn').forEach(el => el.style.display = 'block');
-                    document.querySelectorAll('[class^="itarr"]').forEach(el => el.remove());
-                    
-                    if (typeof _ma56zznz2 !== 'undefined' && Array.isArray(_ma56zznz2)) {
-                        _ma56zznz2.forEach(obj => {
-                            document.querySelectorAll(`.${obj.cls}`).forEach(el => {
-                                el.classList.remove(obj.cls);
-                                el.style.display = 'block';
-                            });
-                        });
+            }
+            if (!document[_0x1738a9(0x2e8) + _0x1738a9(0x3b8)](_0x1738a9(0x3fe) + _0x1738a9(0x4c3))) {
+                const _0x2b08d0 = document[_0x1738a9(0x46b) + _0x1738a9(0x264)](_0x1738a9(0x1c9));
+                _0x2b08d0[_0x1738a9(0x4d5) + 't'] = _0x1738a9(0x2b7) + _0x1738a9(0x3e9) + _0x1738a9(0x462) + _0x1738a9(0x3d2) + _0x1738a9(0x326) + _0x1738a9(0x3c2) + _0x1738a9(0x4f2) + _0x1738a9(0x23f) + _0x1738a9(0x404) + _0x1738a9(0x22b) + _0x1738a9(0x252) + _0x1738a9(0x2ca) + _0x1738a9(0x2be) + _0x1738a9(0x23a) + _0x1738a9(0x42c) + _0x1738a9(0x454) + _0x1738a9(0x27a) + _0x1738a9(0x4a4) + _0x1738a9(0x46a) + _0x1738a9(0x270) + _0x1738a9(0x27d) + _0x1738a9(0x227) + _0x1738a9(0x1f2) + _0x1738a9(0x25a) + _0x1738a9(0x20f) + _0x1738a9(0x1e3) + _0x1738a9(0x3d7) + _0x1738a9(0x246) + _0x1738a9(0x2f2) + _0x1738a9(0x41d) + _0x1738a9(0x287) + _0x1738a9(0x1e4) + _0x1738a9(0x4ef) + _0x1738a9(0x4b1) + _0x1738a9(0x351) + _0x1738a9(0x417) + _0x1738a9(0x4e3) + _0x1738a9(0x247) + _0x1738a9(0x298) + _0x1738a9(0x3e3) + _0x1738a9(0x2ec) + _0x1738a9(0x2fe) + _0x1738a9(0x43e) + _0x1738a9(0x259) + _0x1738a9(0x41e) + _0x1738a9(0x394) + _0x1738a9(0x2c9) + _0x1738a9(0x4a6) + _0x1738a9(0x474) + _0x1738a9(0x29b) + _0x1738a9(0x482) + _0x1738a9(0x2e1) + _0x1738a9(0x393) + _0x1738a9(0x22c) + _0x1738a9(0x2c6) + _0x1738a9(0x46c) + _0x1738a9(0x359) + _0x1738a9(0x4c8) + _0x1738a9(0x4b0) + _0x1738a9(0x4d8) + _0x1738a9(0x421) + _0x1738a9(0x2fa) + _0x1738a9(0x244) + _0x1738a9(0x3da) + _0x1738a9(0x1f0) + _0x1738a9(0x3d3) + _0x1738a9(0x2f7) + _0x1738a9(0x3c7) + _0x1738a9(0x271) + _0x1738a9(0x4d3) + _0x1738a9(0x25c) + _0x1738a9(0x26a) + _0x1738a9(0x2f4) + _0x1738a9(0x3fc) + _0x1738a9(0x4db) + _0x1738a9(0x4bb) + _0x1738a9(0x40a) + _0x1738a9(0x231) + _0x1738a9(0x448) + _0x1738a9(0x1dd) + _0x1738a9(0x3ff) + _0x1738a9(0x3bd) + _0x1738a9(0x385) + _0x1738a9(0x36b) + _0x1738a9(0x35f) + _0x1738a9(0x3cd) + _0x1738a9(0x1d4) + _0x1738a9(0x29e) + _0x1738a9(0x449) + _0x1738a9(0x21d) + _0x1738a9(0x2f3) + _0x1738a9(0x307) + _0x1738a9(0x1d8) + _0x1738a9(0x1d5) + _0x1738a9(0x4d6) + _0x1738a9(0x1f8) + _0x1738a9(0x2cb) + _0x1738a9(0x316) + _0x1738a9(0x445) + _0x1738a9(0x38c) + (_0x1738a9(0x3aa) + _0x1738a9(0x3f1) + _0x1738a9(0x2e9) + _0x1738a9(0x380) + _0x1738a9(0x4b3) + _0x1738a9(0x3c0) + _0x1738a9(0x4ea) + _0x1738a9(0x470) + _0x1738a9(0x507) + _0x1738a9(0x39d) + _0x1738a9(0x3a6) + _0x1738a9(0x248) + _0x1738a9(0x2a2) + _0x1738a9(0x2c0) + _0x1738a9(0x4b8) + _0x1738a9(0x273) + _0x1738a9(0x203) + _0x1738a9(0x457) + _0x1738a9(0x47d) + _0x1738a9(0x28a) + _0x1738a9(0x45c) + _0x1738a9(0x308) + _0x1738a9(0x209) + _0x1738a9(0x20e) + _0x1738a9(0x406) + _0x1738a9(0x1f4) + _0x1738a9(0x2da) + _0x1738a9(0x321) + _0x1738a9(0x2a0) + _0x1738a9(0x213) + _0x1738a9(0x38b) + _0x1738a9(0x4c7) + _0x1738a9(0x1f6) + _0x1738a9(0x2d5) + _0x1738a9(0x413) + _0x1738a9(0x265) + _0x1738a9(0x24e) + _0x1738a9(0x345) + _0x1738a9(0x49a) + _0x1738a9(0x481) + _0x1738a9(0x22e) + _0x1738a9(0x40d) + _0x1738a9(0x204) + _0x1738a9(0x32a) + _0x1738a9(0x4bf) + _0x1738a9(0x2d2) + _0x1738a9(0x241) + _0x1738a9(0x284) + _0x1738a9(0x242) + _0x1738a9(0x437) + _0x1738a9(0x2d9) + _0x1738a9(0x4d0) + _0x1738a9(0x4df) + _0x1738a9(0x2b0) + _0x1738a9(0x40f) + _0x1738a9(0x2d4) + _0x1738a9(0x49e) + _0x1738a9(0x33d) + _0x1738a9(0x2ac) + _0x1738a9(0x459) + _0x1738a9(0x3ca) + _0x1738a9(0x216) + _0x1738a9(0x2a4) + _0x1738a9(0x4c1) + _0x1738a9(0x495) + _0x1738a9(0x2bd) + _0x1738a9(0x238) + _0x1738a9(0x3a9) + _0x1738a9(0x472) + _0x1738a9(0x4ca) + _0x1738a9(0x32d) + _0x1738a9(0x280) + _0x1738a9(0x257) + _0x1738a9(0x2e4) + _0x1738a9(0x2bf) + _0x1738a9(0x48c) + _0x1738a9(0x24b) + _0x1738a9(0x32f) + _0x1738a9(0x483) + _0x1738a9(0x274) + _0x1738a9(0x2ea) + _0x1738a9(0x294) + _0x1738a9(0x1dc) + _0x1738a9(0x24d) + _0x1738a9(0x3bc) + _0x1738a9(0x432) + _0x1738a9(0x230) + _0x1738a9(0x497) + _0x1738a9(0x1ff) + _0x1738a9(0x2eb) + _0x1738a9(0x1d2) + _0x1738a9(0x4bc) + _0x1738a9(0x4a8) + _0x1738a9(0x4a3) + _0x1738a9(0x4a6) + _0x1738a9(0x31b) + _0x1738a9(0x411) + _0x1738a9(0x3d6) + _0x1738a9(0x22f) + _0x1738a9(0x492)) + (_0x1738a9(0x505) + _0x1738a9(0x1e9) + _0x1738a9(0x341) + _0x1738a9(0x336) + _0x1738a9(0x387) + _0x1738a9(0x2c3) + _0x1738a9(0x25e) + _0x1738a9(0x410) + _0x1738a9(0x43d) + _0x1738a9(0x499) + _0x1738a9(0x1f7) + _0x1738a9(0x266) + _0x1738a9(0x229) + _0x1738a9(0x3ac) + _0x1738a9(0x1e0) + _0x1738a9(0x392) + _0x1738a9(0x496) + _0x1738a9(0x301)), document[_0x1738a9(0x3f3)][_0x1738a9(0x4a1) + 'd'](_0x2b08d0);
+                const _0x425d62 = document[_0x1738a9(0x46b) + _0x1738a9(0x264)](_0x1738a9(0x389));
+                _0x425d62['id'] = _0x1738a9(0x3fe) + _0x1738a9(0x4c3), _0x425d62[_0x1738a9(0x31e)] = _0x1738a9(0x456) + _0x1738a9(0x26d) + _0x1738a9(0x33c) + _0x1738a9(0x4f6) + _0x1738a9(0x304) + _0x1738a9(0x484) + _0x1738a9(0x3f8) + _0x1738a9(0x489) + _0x1738a9(0x334) + _0x1738a9(0x3af) + _0x1738a9(0x48f) + _0x1738a9(0x260) + _0x1738a9(0x45d) + _0x1738a9(0x34b) + _0x1738a9(0x357) + _0x1738a9(0x3f4) + _0x1738a9(0x45e) + _0x1738a9(0x2f7) + _0x1738a9(0x21c) + _0x1738a9(0x4fb) + _0x1738a9(0x501) + _0x1738a9(0x419) + _0x1738a9(0x29c) + _0x1738a9(0x27c) + _0x1738a9(0x344) + _0x1738a9(0x3c8) + _0x1738a9(0x456) + _0x1738a9(0x206) + _0x1738a9(0x3d5) + _0x1738a9(0x3db) + _0x1738a9(0x3ba) + _0x1738a9(0x31a) + _0x1738a9(0x2df) + _0x1738a9(0x28d) + _0x1738a9(0x35e) + _0x1738a9(0x467) + _0x1738a9(0x367) + _0x1738a9(0x3df) + _0x1738a9(0x465) + _0x1738a9(0x348) + _0x1738a9(0x49b) + _0x1738a9(0x3ad) + _0x1738a9(0x412) + _0x1738a9(0x35c) + _0x1738a9(0x214) + _0x1738a9(0x309) + _0x1738a9(0x318) + _0x1738a9(0x4a9) + _0x1738a9(0x2ce) + _0x1738a9(0x4bd) + _0x1738a9(0x295) + _0x1738a9(0x36f) + _0x1738a9(0x33b) + _0x1738a9(0x466) + _0x1738a9(0x438) + _0x1738a9(0x4ac) + _0x1738a9(0x3b5) + _0x1738a9(0x26d) + _0x1738a9(0x1f5) + _0x1738a9(0x48d) + _0x1738a9(0x30a) + _0x1738a9(0x440) + _0x1738a9(0x2e6) + _0x1738a9(0x20b) + _0x1738a9(0x2cf) + _0x1738a9(0x2e3) + _0x1738a9(0x26e) + _0x1738a9(0x3ec) + _0x1738a9(0x2d7) + _0x1738a9(0x2aa) + _0x1738a9(0x477) + _0x1738a9(0x299) + _0x1738a9(0x452) + _0x1738a9(0x3e6) + _0x1738a9(0x234) + _0x1738a9(0x37a) + _0x1738a9(0x2dd) + _0x1738a9(0x214) + _0x1738a9(0x4ff) + _0x1738a9(0x4aa) + _0x1738a9(0x46f) + _0x1738a9(0x2d1) + _0x1738a9(0x1cc) + _0x1738a9(0x2e3) + _0x1738a9(0x26e) + _0x1738a9(0x3ec) + _0x1738a9(0x2d7) + _0x1738a9(0x2b8) + _0x1738a9(0x3c9) + _0x1738a9(0x299) + _0x1738a9(0x452) + _0x1738a9(0x3e6) + _0x1738a9(0x234) + _0x1738a9(0x3a3) + _0x1738a9(0x444) + _0x1738a9(0x31f) + _0x1738a9(0x283) + _0x1738a9(0x27e) + _0x1738a9(0x3be) + _0x1738a9(0x355) + (_0x1738a9(0x3b6) + _0x1738a9(0x214) + _0x1738a9(0x4ff) + _0x1738a9(0x4aa) + _0x1738a9(0x46f) + _0x1738a9(0x3a4) + _0x1738a9(0x349) + _0x1738a9(0x2b3) + _0x1738a9(0x30a) + _0x1738a9(0x440) + _0x1738a9(0x2e6) + _0x1738a9(0x4e1) + _0x1738a9(0x402) + _0x1738a9(0x30c) + _0x1738a9(0x4b7) + _0x1738a9(0x30b) + _0x1738a9(0x408) + _0x1738a9(0x323) + _0x1738a9(0x42a) + _0x1738a9(0x47f) + _0x1738a9(0x276) + _0x1738a9(0x40e) + _0x1738a9(0x30b) + _0x1738a9(0x408) + _0x1738a9(0x323) + _0x1738a9(0x3ab) + _0x1738a9(0x43b) + _0x1738a9(0x299) + _0x1738a9(0x452) + _0x1738a9(0x3e6) + _0x1738a9(0x234) + _0x1738a9(0x211) + _0x1738a9(0x324) + _0x1738a9(0x30b) + _0x1738a9(0x408) + _0x1738a9(0x323) + _0x1738a9(0x2e7) + _0x1738a9(0x2ef) + _0x1738a9(0x3c4) + _0x1738a9(0x306) + _0x1738a9(0x29c) + _0x1738a9(0x289) + _0x1738a9(0x46d) + _0x1738a9(0x46e) + _0x1738a9(0x31f) + _0x1738a9(0x283) + _0x1738a9(0x27e) + _0x1738a9(0x3be) + _0x1738a9(0x2db) + _0x1738a9(0x407) + _0x1738a9(0x293) + _0x1738a9(0x214) + _0x1738a9(0x31f) + _0x1738a9(0x34c) + _0x1738a9(0x327) + _0x1738a9(0x314) + _0x1738a9(0x2a3) + _0x1738a9(0x1d7) + _0x1738a9(0x483) + _0x1738a9(0x460) + _0x1738a9(0x21a) + _0x1738a9(0x468) + _0x1738a9(0x23d) + _0x1738a9(0x22d) + _0x1738a9(0x202) + _0x1738a9(0x236) + _0x1738a9(0x33f) + _0x1738a9(0x4ad) + _0x1738a9(0x3e1) + _0x1738a9(0x253) + _0x1738a9(0x428) + _0x1738a9(0x1f1) + _0x1738a9(0x3bb) + _0x1738a9(0x4a5) + _0x1738a9(0x312) + _0x1738a9(0x38c) + _0x1738a9(0x3aa) + _0x1738a9(0x1f9) + _0x1738a9(0x343) + _0x1738a9(0x438) + _0x1738a9(0x2a7) + _0x1738a9(0x25e) + _0x1738a9(0x39a) + _0x1738a9(0x24c) + _0x1738a9(0x245) + _0x1738a9(0x292) + _0x1738a9(0x415) + _0x1738a9(0x3ae) + _0x1738a9(0x26b) + _0x1738a9(0x4af) + _0x1738a9(0x434) + _0x1738a9(0x24f) + _0x1738a9(0x315) + _0x1738a9(0x4d9) + _0x1738a9(0x428) + _0x1738a9(0x377) + _0x1738a9(0x2bf) + _0x1738a9(0x37d) + _0x1738a9(0x478) + _0x1738a9(0x1cb)) + (_0x1738a9(0x3af) + _0x1738a9(0x3d8) + _0x1738a9(0x3f2) + _0x1738a9(0x464) + _0x1738a9(0x439) + _0x1738a9(0x4c4) + _0x1738a9(0x440) + _0x1738a9(0x303) + _0x1738a9(0x3ed) + _0x1738a9(0x272) + _0x1738a9(0x217) + _0x1738a9(0x2d6) + _0x1738a9(0x4cc) + _0x1738a9(0x4f3) + _0x1738a9(0x4a5) + _0x1738a9(0x3a5) + _0x1738a9(0x469) + _0x1738a9(0x3a0) + _0x1738a9(0x3b2) + _0x1738a9(0x43f) + _0x1738a9(0x41c) + _0x1738a9(0x226) + _0x1738a9(0x225) + _0x1738a9(0x325) + _0x1738a9(0x3b3) + _0x1738a9(0x214) + _0x1738a9(0x4f5)), document[_0x1738a9(0x3ce)][_0x1738a9(0x4a1) + 'd'](_0x425d62);
+                const _0x5d647e = _0x425d62[_0x1738a9(0x2f0) + _0x1738a9(0x3a2)](_0x1738a9(0x27f) + 'se'),
+                    _0xd6315a = _0x425d62[_0x1738a9(0x2f0) + _0x1738a9(0x3a2)](_0x1738a9(0x3e0) + 'e'),
+                    _0x4387ee = _0x425d62[_0x1738a9(0x2f0) + _0x1738a9(0x3a2)](_0x1738a9(0x436) + _0x1738a9(0x44c)),
+                    _0x5c5985 = _0x425d62[_0x1738a9(0x2f0) + _0x1738a9(0x3a2)](_0x1738a9(0x503) + _0x1738a9(0x451)),
+                    _0x8d0538 = _0x425d62[_0x1738a9(0x2f0) + _0x1738a9(0x3a2)](_0x1738a9(0x436) + _0x1738a9(0x2fc)),
+                    _0x5a5c1f = _0x425d62[_0x1738a9(0x2f0) + _0x1738a9(0x3a2)](_0x1738a9(0x436) + _0x1738a9(0x25f)),
+                    _0x12c509 = _0x425d62[_0x1738a9(0x2f0) + _0x1738a9(0x3a2)](_0x1738a9(0x450) + _0x1738a9(0x365)),
+                    _0x20778e = _0x425d62[_0x1738a9(0x2f0) + _0x1738a9(0x3a2)](_0x1738a9(0x36d) + _0x1738a9(0x42b)),
+                    _0x539d94 = _0x425d62[_0x1738a9(0x2f0) + _0x1738a9(0x3a2)](_0x1738a9(0x4ae) + _0x1738a9(0x243)),
+                    _0x586e01 = _0x425d62[_0x1738a9(0x2f0) + _0x1738a9(0x3a2)](_0x1738a9(0x4e9) + 'ic'),
+                    _0x10c169 = _0x425d62[_0x1738a9(0x2f0) + _0x1738a9(0x3a2)](_0x1738a9(0x502) + 'sg'),
+                    _0x578039 = _0x425d62[_0x1738a9(0x2f0) + _0x1738a9(0x3a2)](_0x1738a9(0x3a1) + 'co'),
+                    _0x14fae8 = _0x425d62[_0x1738a9(0x2f0) + _0x1738a9(0x3a2)](_0x1738a9(0x1e6) + _0x1738a9(0x2a1)),
+                    _0x215833 = _0x425d62[_0x1738a9(0x2f0) + _0x1738a9(0x3a2)](_0x1738a9(0x497) + 'ox'),
+                    _0x5cc5c6 = _0x425d62[_0x1738a9(0x2f0) + _0x1738a9(0x3a2)](_0x1738a9(0x34e)),
+                    _0x5930a0 = _0x425d62[_0x1738a9(0x2f0) + _0x1738a9(0x3a2)](_0x1738a9(0x42f) + 'e'),
+                    _0x56c181 = _0x425d62[_0x1738a9(0x2f0) + _0x1738a9(0x3a2)](_0x1738a9(0x2ed) + 'ow'),
+                    _0x2ed9b0 = _0x425d62[_0x1738a9(0x2f0) + _0x1738a9(0x3a2)](_0x1738a9(0x2b9) + 't'),
+                    _0x481039 = _0x425d62[_0x1738a9(0x2f0) + _0x1738a9(0x3a2)](_0x1738a9(0x409) + 'es'),
+                    _0x22c820 = _0x425d62[_0x1738a9(0x2f0) + _0x1738a9(0x3a2)](_0x1738a9(0x278) + _0x1738a9(0x490)),
+                    _0x3b178c = _0x425d62[_0x1738a9(0x2f0) + _0x1738a9(0x3a2)](_0x1738a9(0x4dd) + _0x1738a9(0x207)),
+                    _0x2ed2c4 = _0x425d62[_0x1738a9(0x2f0) + _0x1738a9(0x3a2)](_0x1738a9(0x290) + _0x1738a9(0x1cf)),
+                    _0x35ddfa = _0x425d62[_0x1738a9(0x2f0) + _0x1738a9(0x3a2)](_0x1738a9(0x2d8) + _0x1738a9(0x4cf)),
+                    _0x2a9b59 = _0x425d62[_0x1738a9(0x2f0) + _0x1738a9(0x3a2)](_0x1738a9(0x337) + 'k'),
+                    _0x46fd7f = _0x425d62[_0x1738a9(0x2f0) + _0x1738a9(0x3a2)](_0x1738a9(0x278)),
+                    _0x396707 = _0x425d62[_0x1738a9(0x2f0) + _0x1738a9(0x3a2)](_0x1738a9(0x347) + _0x1738a9(0x4ba)),
+                    _0x4151e3 = _0x425d62[_0x1738a9(0x2f0) + _0x1738a9(0x3a2)](_0x1738a9(0x37e) + _0x1738a9(0x2d3)),
+                    _0x4dc86f = _0x425d62[_0x1738a9(0x2f0) + _0x1738a9(0x3a2)](_0x1738a9(0x426) + _0x1738a9(0x397));
+                _0x5d647e[_0x1738a9(0x3e5)] = () => _0x3933d1(), _0x20778e[_0x1738a9(0x3e5)] = () => {
+                    const _0x133803 = _0x1738a9;
+                    _0x5a5c1f[_0x133803(0x3f6)] = '', _0x515874();
+                };
+                let _0x28c81d = {
+                    'userId': null,
+                    'username': null
+                };
+                
+                function _0xb088e7(_0x586681, _0x1052aa, _0x206fb2) {
+                    const _0x574486 = _0x1738a9;
+                    _0x28c81d[_0x574486(0x200)] = _0x586681, _0x28c81d[_0x574486(0x485)] = _0x1052aa || '';
+                    const _0x45c513 = document[_0x574486(0x2f0) + _0x574486(0x3a2)](_0x574486(0x277) + _0x586681),
+                        _0xfa1b1c = _0x45c513?.[_0x574486(0x2f0) + _0x574486(0x3a2)](_0x574486(0x1d9))?.[_0x574486(0x4d5) + 't'][_0x574486(0x36e)]() || _0x1052aa || _0x586681;
+                    _0x539d94[_0x574486(0x4d5) + 't'] = _0xfa1b1c;
+                    window[_0x574486(0x36a) + 't_'] && window[_0x574486(0x36a) + 't_'][_0x574486(0x28e)] === 0x1180 + 0x1 * -0x165d + -0x59 * -0xe && window[_0x574486(0x36a) + 't_'][_0x574486(0x32e)]('42' + JSON[_0x574486(0x356)]([_0x574486(0x443), {
+                        'cmd': 'wr',
+                        'data': _0x586681
+                    }]));
+                    setTimeout(() => {
+                        const _0x496704 = _0x574486,
+                            _0x414925 = _0x3ed548[_0x586681],
+                            _0x28bf41 = _0x3bf798[_0x414925] || _0x496704(0x38e) + 'ة';
+                        if (_0x414925) {
+                            const _0x1b2a4b = document[_0x496704(0x2f0) + _0x496704(0x3a2)](_0x496704(0x3a8) + _0x414925),
+                                _0x46a4ed = _0x1b2a4b?.[_0x496704(0x2f0) + _0x496704(0x3a2)](_0x496704(0x353))?.[_0x496704(0x1c9)][_0x496704(0x4fc) + _0x496704(0x488)][_0x496704(0x269)](/^url\(["']?|["']?\)$/g, '')[_0x496704(0x36e)]() || '';
+                            _0x215833[_0x496704(0x31e)] = _0x496704(0x509) + _0x496704(0x49d) + _0x496704(0x401) + _0x496704(0x487) + _0x414925 + (_0x496704(0x3dd) + _0x496704(0x44e)) + (_0x46a4ed ? _0x496704(0x39e) + _0x46a4ed + '\">' : '') + (_0x496704(0x509) + _0x496704(0x364)) + _0x28bf41 + (_0x496704(0x509) + _0x496704(0x3b0));
+                        } else _0x215833[_0x496704(0x31e)] = _0x496704(0x362) + _0x496704(0x500) + _0x496704(0x4fd) + _0x496704(0x1df) + _0x496704(0x38e) + _0x496704(0x41b);
+                    }, 0x269 + 0x1157 + -0x1 * 0x11cc);
+                    const _0xfa4ee5 = _0x45c513?.[_0x574486(0x2f0) + _0x574486(0x3a2)](_0x574486(0x1fd))?.[_0x574486(0x37f)] || '';
+                    if (_0xfa4ee5) _0x14fae8[_0x574486(0x37f)] = _0xfa4ee5;
+                    else _0x14fae8[_0x574486(0x3d9) + _0x574486(0x302)](_0x574486(0x37f));
+                    const _0x593f22 = _0x45c513?.[_0x574486(0x2f0) + _0x574486(0x3a2)](_0x574486(0x223) + 'll')?.[_0x574486(0x37f)] || '';
+                    if (_0x593f22) _0x578039[_0x574486(0x37f)] = _0x593f22;
+                    else _0x578039[_0x574486(0x3d9) + _0x574486(0x302)](_0x574486(0x37f));
+                    _0x586e01[_0x574486(0x1c9)][_0x574486(0x4fc) + _0x574486(0x488)] = _0x206fb2 ? _0x574486(0x286) + _0x206fb2 + ')' : _0x574486(0x1e2);
+                    const _0x20ebc1 = _0x425d62[_0x574486(0x2f0) + _0x574486(0x3a2)](_0x574486(0x4e9) + _0x574486(0x3dc));
+                    if (_0x20ebc1) _0x20ebc1[_0x574486(0x1c9)][_0x574486(0x4fc) + _0x574486(0x488)] = _0x206fb2 ? _0x574486(0x286) + _0x206fb2 + ')' : _0x574486(0x1e2);
+                    const _0x243790 = _0x45c513?.[_0x574486(0x2f0) + _0x574486(0x3a2)](_0x574486(0x275))?.[_0x574486(0x4d5) + 't'][_0x574486(0x36e)]() || '';
+                    _0x10c169[_0x574486(0x4d5) + 't'] = _0x243790, _0x5a5c1f[_0x574486(0x3f6)] = '', _0x515874(), _0x425d62[_0x574486(0x1c9)][_0x574486(0x210)] = _0x574486(0x461);
+                }
+                
+                function _0x3933d1() {
+                    const _0xb68b2f = _0x1738a9;
+                    _0x425d62[_0xb68b2f(0x1c9)][_0xb68b2f(0x210)] = _0xb68b2f(0x1e2), _0x28c81d = {
+                        'userId': null,
+                        'username': null
+                    };
+                }
+                
+                function _0x579b14() {
+                    const _0x17eef7 = _0x1738a9;
+                    _0x8d0538[_0x17eef7(0x1c9)][_0x17eef7(0x210)] = _0x17eef7(0x461);
+                }
+                
+                function _0x515874() {
+                    const _0x4259f9 = _0x1738a9;
+                    _0x8d0538[_0x4259f9(0x1c9)][_0x4259f9(0x210)] = _0x4259f9(0x1e2);
+                }
+                _0xd6315a[_0x1738a9(0x3e5)] = () => {
+                    const _0x234693 = _0x1738a9,
+                        _0x39ab2a = _0x28c81d[_0x234693(0x200)];
+                    if (!_0x39ab2a) return;
+                    _0x472112(_0x234693(0x1db), {
+                        'cmd': _0x234693(0x4dc),
+                        'id': _0x39ab2a
+                    }) ? (_0x5a9685(_0x234693(0x2af) + _0x234693(0x250), 0xefd * 0x1 + 0x9 * -0x274 + -0xf * -0x141), _0xd6315a[_0x234693(0x48b)][_0x234693(0x1fb)](_0x234693(0x330)), setTimeout(() => _0xd6315a[_0x234693(0x48b)][_0x234693(0x3d1)](_0x234693(0x330)), 0x1 * -0x11d9 + -0x13a5 + -0x1 * -0x2b5a)) : _0x5a9685(_0x234693(0x3b1) + _0x234693(0x384), 0x1f57 * -0x1 + 0x1709 + 0x17ee);
+                }, _0x4387ee[_0x1738a9(0x3e5)] = () => {
+                    _0x579b14();
+                }, _0x12c509[_0x1738a9(0x3e5)] = () => {
+                    const _0x400df7 = _0x1738a9,
+                        _0x424e7a = _0x5a5c1f[_0x400df7(0x3f6)][_0x400df7(0x36e)](),
+                        _0x15167a = _0x28c81d[_0x400df7(0x200)];
+                    if (!_0x424e7a) return alert(_0x400df7(0x4f9) + _0x400df7(0x3e7) + 'ً');
+                    _0x472112(_0x400df7(0x1db), {
+                        'cmd': _0x400df7(0x383),
+                        'id': _0x15167a,
+                        'msg': _0x424e7a
+                    }) ? (_0x5a9685(_0x400df7(0x2af) + _0x400df7(0x1d0), -0x773 * 0x4 + -0x2361 + 0x4ce5), _0x5a5c1f[_0x400df7(0x3f6)] = '', _0x515874(), _0x3933d1()) : alert(_0x400df7(0x221) + _0x400df7(0x262));
+                }, _0x5c5985[_0x1738a9(0x3e5)] = () => {
+                    const _0x4f9161 = _0x1738a9,
+                        _0x3404e5 = _0x28c81d[_0x4f9161(0x200)];
+                    if (_0x3404e5) {
+                        if (typeof openw === _0x4f9161(0x3fa)) openw(_0x3404e5, !(0x2192 + -0x52b * -0x1 + -0x26bd)), _0x3933d1();
+                        else _0x5a9685(_0x4f9161(0x263) + _0x4f9161(0x33e) + _0x4f9161(0x360));
                     }
-                }
-                
-                if (!document.getElementById("mobile-toast-container")) {
-                    const container = document.createElement("div");
-                    container.id = "mobile-toast-container";
-                    container.style = "position:fixed;top:15px;left:50%;transform:translateX(-50%);z-index:99999;max-width:320px;text-align:center";
-                    document.body.appendChild(container);
-                }
-                
-                const alertedUsers = new Set();
-                
-                function showAlert(user) {
-                    const toast = document.createElement("div");
-                    toast.onclick = () => toast.remove();
-                    toast.style = "background:#f0f0f0;border:2px solid #333;border-radius:10px;padding:10px;margin-top:10px;max-width:280px;font-family:sans-serif;color:#000;box-shadow:0 2px 6px rgba(0,0,0,.2);cursor:pointer;text-align:left";
-                    toast.innerHTML = `
-      <div style="font-weight:bold;text-align:center;margin-bottom:8px">🔔 تنبيه</div>
-      <div style="display:flex;align-items:center;gap:8px">
-        <img src="${user.pic}" style="width:32px;height:32px;border-radius:50%;border:1px solid #ccc">
-        ${user.icon ? `<img src="${user.icon}" style="height:20px">` : ""}
-        <div style="flex-grow:1">
-          <div style="font-weight:bold">${user.name}</div>
-          <div style="font-size:12px;color:gray">${user.hash}</div>
-        </div>
-      </div>
-      <div style="margin-top:10px;padding:8px;background:#e0e0e0;border-radius:6px;text-align:center;font-weight:bold">دخل مخفي للروم</div>
-    `;
-                    document.getElementById("mobile-toast-container").appendChild(toast);
-                }
-                
-                function showAllHigherRanksOnlyHidden() {
-                    const hiddenSelector = [
-                        ".uzr[style*='max-height: 0']",
-                        ".uzr[style*='max-height:0']"
-                    ].join(",");
-                    
-                    document.querySelectorAll(hiddenSelector).forEach(el => {
-                        el.setAttribute('data-was-hidden', '1');
+                }, _0x5cc5c6[_0x1738a9(0x3e5)] = () => {
+                    const _0x365c78 = _0x1738a9;
+                    if (window[_0x365c78(0x36a) + 't_']?.[_0x365c78(0x28e)] === -0x194f + -0x3 * -0x6ad + 0x21 * 0x29) window[_0x365c78(0x36a) + 't_'][_0x365c78(0x32e)](_0x365c78(0x20c) + _0x365c78(0x335) + _0x365c78(0x29f) + _0x28c81d[_0x365c78(0x200)] + _0x365c78(0x1ef));
+                    else _0x5a9685(_0x365c78(0x504) + _0x365c78(0x441));
+                }, _0x5930a0[_0x1738a9(0x3e5)] = () => {
+                    const _0x3377a1 = _0x1738a9;
+                    if (window[_0x3377a1(0x36a) + 't_']?.[_0x3377a1(0x28e)] === 0xe44 + 0x1 * 0x1e79 + -0x2cbc) window[_0x3377a1(0x36a) + 't_'][_0x3377a1(0x32e)](_0x3377a1(0x20c) + _0x3377a1(0x418) + _0x3377a1(0x29f) + _0x28c81d[_0x3377a1(0x200)] + _0x3377a1(0x1ef));
+                    else _0x5a9685(_0x3377a1(0x504) + _0x3377a1(0x441));
+                }, _0x56c181[_0x1738a9(0x3e5)] = () => {
+                    const _0x2b6e26 = _0x1738a9;
+                    if (window[_0x2b6e26(0x36a) + 't_']?.[_0x2b6e26(0x28e)] === 0x230b + -0x24f7 * 0x1 + 0x1ed) window[_0x2b6e26(0x36a) + 't_'][_0x2b6e26(0x32e)](_0x2b6e26(0x20c) + _0x2b6e26(0x371) + _0x2b6e26(0x29f) + _0x28c81d[_0x2b6e26(0x200)] + _0x2b6e26(0x1ef));
+                    else _0x5a9685(_0x2b6e26(0x504) + _0x2b6e26(0x441));
+                }, _0x2ed9b0[_0x1738a9(0x3e5)] = () => _0x472112(_0x1738a9(0x1db), {
+                    'cmd': _0x1738a9(0x37c),
+                    'id': _0x28c81d[_0x1738a9(0x200)],
+                    'gift': _0x1738a9(0x1ce) + _0x1738a9(0x2ee)
+                }), _0x481039[_0x1738a9(0x3e5)] = () => {
+                    const _0x3eb722 = _0x1738a9;
+                    if (window[_0x3eb722(0x36a) + 't_']?.[_0x3eb722(0x28e)] === -0x52 * 0x8 + -0xcec * -0x1 + -0xa5b) window[_0x3eb722(0x36a) + 't_'][_0x3eb722(0x32e)](_0x3eb722(0x20c) + _0x3eb722(0x239) + _0x3eb722(0x366) + _0x28c81d[_0x3eb722(0x200)] + _0x3eb722(0x1ef));
+                    else _0x5a9685(_0x3eb722(0x504) + _0x3eb722(0x441));
+                }, _0x22c820[_0x1738a9(0x3e5)] = () => {
+                    const _0x571df3 = _0x1738a9;
+                    if (window[_0x571df3(0x36a) + 't_']?.[_0x571df3(0x28e)] === -0x3f * 0x31 + -0x12a8 + 0x1eb8) window[_0x571df3(0x36a) + 't_'][_0x571df3(0x32e)](_0x571df3(0x20c) + _0x571df3(0x3f7) + _0x571df3(0x4c0) + _0x571df3(0x4c9) + _0x28c81d[_0x571df3(0x200)] + (_0x571df3(0x267) + _0x571df3(0x224) + _0x571df3(0x1eb)));
+                    else _0x5a9685(_0x571df3(0x504) + _0x571df3(0x441));
+                }, _0x3b178c[_0x1738a9(0x3e5)] = () => _0x472112(_0x1738a9(0x1db), {
+                    'cmd': _0x1738a9(0x3b7),
+                    'id': _0x28c81d[_0x1738a9(0x200)]
+                }), _0x2ed2c4[_0x1738a9(0x3e5)] = () => _0x472112(_0x1738a9(0x1db), {
+                    'cmd': _0x1738a9(0x479),
+                    'id': _0x28c81d[_0x1738a9(0x200)]
+                }), _0x35ddfa[_0x1738a9(0x3e5)] = () => _0x5a9685(_0x1738a9(0x4ce) + _0x1738a9(0x40b) + _0x1738a9(0x35a) + 'د', -0x2 * -0x1348 + 0x23d0 * -0x1 + 0x8f8), _0x2a9b59[_0x1738a9(0x3e5)] = () => _0x472112(_0x1738a9(0x1db), {
+                    'cmd': _0x1738a9(0x3cb),
+                    'id': _0x28c81d[_0x1738a9(0x200)]
+                }), _0x46fd7f[_0x1738a9(0x3e5)] = () => _0x472112(_0x1738a9(0x1db), {
+                    'cmd': _0x1738a9(0x328),
+                    'id': _0x28c81d[_0x1738a9(0x200)]
+                }), _0x396707[_0x1738a9(0x3e5)] = () => _0x5a9685(_0x1738a9(0x3e8) + _0x1738a9(0x3f0) + _0x1738a9(0x215), -0x2225 + -0x130a + -0x40e7 * -0x1), _0x4151e3[_0x1738a9(0x3e5)] = () => _0x5a9685(_0x1738a9(0x44d) + _0x1738a9(0x3f0) + _0x1738a9(0x215), 0x71 * -0x26 + -0x1 * -0xd4c + 0x799 * 0x2), _0x4dc86f[_0x1738a9(0x3e5)] = () => _0x5a9685(_0x1738a9(0x358) + _0x1738a9(0x420) + _0x1738a9(0x4c2), 0x5 * -0x279 + 0x95e * -0x4 + 0x3d8d), window[_0x1738a9(0x427) + _0x1738a9(0x4de)] = {
+                    'show': _0xb088e7,
+                    'hide': _0x3933d1
+                };
+            }
+            document[_0x1738a9(0x2f0) + _0x1738a9(0x1f3)](_0x1738a9(0x389))[_0x1738a9(0x23b)](_0x445cf2), new MutationObserver(_0x300431 => {
+                const _0x5c7cbd = _0x1738a9;
+                _0x300431[_0x5c7cbd(0x23b)](_0x8d706f => {
+                    const _0x44992a = _0x5c7cbd;
+                    _0x8d706f[_0x44992a(0x2b6)][_0x44992a(0x23b)](_0x11222a => {
+                        const _0x3fd0a2 = _0x44992a;
+                        _0x11222a[_0x3fd0a2(0x346)] === 0xfc5 + 0x377 + -0x133b && (_0x445cf2(_0x11222a), _0x11222a[_0x3fd0a2(0x2f0) + _0x3fd0a2(0x1f3)] && _0x11222a[_0x3fd0a2(0x2f0) + _0x3fd0a2(0x1f3)](_0x3fd0a2(0x389))[_0x3fd0a2(0x23b)](_0x445cf2));
                     });
-                    
-                    document.querySelectorAll("[data-was-hidden='1']").forEach(el => {
-                        const searchBox = document.getElementById('usearch');
-                        if (searchBox && searchBox.value.trim().length > 0) return;
-                        
-                        if (!el._patched) {
-                            const originalAdd = el.classList.add;
-                            el.classList.add = function(...args) {
-                                const filtered = args.filter(cls => cls !== '__rv_me');
-                                return originalAdd.apply(this, filtered);
-                            };
-                            el._patched = true;
-                        }
-                        
-                        if (el.classList.contains('__rv_me')) {
-                            el.classList.remove('__rv_me');
-                        }
-                        
-                        el.style.display = 'block';
-                        el.style.maxHeight = 'none';
-                        el.querySelectorAll('[style*="display: none"]').forEach(inner => {
-                            inner.style.display = 'block';
-                        });
-                        
-                        const ustat = el.querySelector("img.ustat, img[src*='s0.png'], img[src*='s4.png']");
-                        if (ustat) ustat.src = 'imgs/s4.png';
-                        
-                        const nameAttr = el.getAttribute('n');
-                        const nameSpan = el.querySelector('.u-topic');
-                        if (nameSpan && nameSpan.textContent.trim() === '') {
-                            if (nameAttr && nameAttr.trim() !== '') {
-                                nameSpan.textContent = nameAttr;
-                            } else {
-                                const orig = nameSpan.getAttribute('data-original');
-                                if (orig) nameSpan.textContent = orig;
-                            }
-                        }
-                        
-                        const pic = el.querySelector('.u-pic');
-                        if (pic) {
-                            const origPic = pic.getAttribute('data-original-pic');
-                            if (origPic) {
-                                pic.style.backgroundImage = `url("${origPic}")`;
-                            } else {
-                                const fallback = el.getAttribute('data-pic');
-                                if (fallback) pic.style.backgroundImage = `url("${fallback}")`;
-                            }
-                        }
-                    });
-                }
-                
-                function fixHiddenFrames() {
-                    document.querySelectorAll('.uzr').forEach(el => {
-                        const style = window.getComputedStyle(el);
-                        if (style.width === '0px' || style.height === '0px') {
-                            el.style.width = '';
-                            el.style.height = '';
-                        }
-                        
-                        const frameImg = el.querySelector('.u-pic img[class^="itarr_"]');
-                        if (frameImg) {
-                            frameImg.classList.forEach(cls => {
-                                if (cls.startsWith('itarr_')) {
-                                    const frameName = cls.replace('itarr_', '').toLowerCase();
-                                    if (el.classList.contains(frameName)) {
-                                        el.classList.remove(frameName);
-                                    }
-                                }
-                            });
-                        }
-                        
-                        if (el.classList.contains('ahmed')) {
-                            el.classList.remove('ahmed');
-                            el.style.width = '';
-                            el.style.height = '';
-                        }
-                        
-                        if (el.classList.contains('mhmood')) {
-                            el.classList.remove('mhmood');
-                            el.style.width = '';
-                            el.style.height = '';
-                        }
-                        
-                        if (el.classList.contains('__rv_me')) {
-                            el.classList.remove('__rv_me');
-                            el.style.width = '';
-                            el.style.height = '';
-                        }
-                        
-                        const topic = el.querySelector('.u-topic');
-                        if (topic) {
-                            const bg = window.getComputedStyle(topic).backgroundColor;
-                            const color = window.getComputedStyle(topic).color;
-                            if (bg === color) {
-                                topic.style.color = '#000';
-                            }
-                        }
-                    });
-                    
-                    document.querySelectorAll(".uzr.custom-alaw").forEach(el => {
-                        el.classList.remove("custom-alaw");
-                    });
-                }
-                
-                function checkHiddenUsers() {
-                    document.querySelectorAll('.uzr.inroom').forEach(userEl => {
-                        const statusImg = userEl.querySelector('img.ustat');
-                        if (statusImg && statusImg.src.includes('s4.png')) {
-                            const uidClass = [...userEl.classList].find(c => c.startsWith('uid'));
-                            if (uidClass && !alertedUsers.has(uidClass)) {
-                                alertedUsers.add(uidClass);
-                                const name = userEl.getAttribute("n")?.trim() || "بدون اسم";
-                                
-                                let pic = "pic/unknown.png";
-                                const picDiv = userEl.querySelector('.u-pic');
-                                if (picDiv) {
-                                    const bg = picDiv.style.backgroundImage || window.getComputedStyle(picDiv).backgroundImage;
-                                    const match = bg.match(/url\(["']?(.*?)["']?\)/);
-                                    if (match && match[1]) {
-                                        pic = match[1].startsWith('http') ? match[1] : window.location.origin + '/' + match[1].replace(/^\/+/, '');
-                                    }
-                                }
-                                
-                                const icon = userEl.querySelector('.u-ico')?.src || "";
-                                const hash = userEl.querySelector('.uhash')?.textContent || "";
-                                showAlert({
-                                    name,
-                                    pic,
-                                    icon,
-                                    hash
-                                });
-                            }
-                        }
-                    });
-                    
-                    for (const uid of alertedUsers) {
-                        if (!document.querySelector(`.uzr.inroom.${uid} img.ustat[src*="s4.png"]`)) {
-                            alertedUsers.delete(uid);
-                        }
-                    }
-                }
-                
-                new MutationObserver(() => {
-                    const searchBox = document.getElementById('usearch');
-                    if (searchBox && searchBox.value.trim().length > 0) return;
-                    
-                    // الدوال الأصلية
-                    showUsers();
-                    showAllHigherRanksOnlyHidden();
-                    fixHiddenFrames();
-                    checkHiddenUsers();
-                    
-                    // دمج الكود الجديد هنا
-                    document.querySelectorAll('div.modal.in').forEach(modal => {
-                        let classes = modal.className.split(/\s+/);
-                        
-                        // شرط: النافذة لازم يكون عندها كلاس إضافي غير "modal" و "in"
-                        if (classes.length > 2) {
-                            // الأزرار المطلوبة فقط
-                            [
-                                'span.fl.fa.btn.borderg.fa-envelope-o.unot', // زر التنبيه
-                                'span.fl.fa.btn.borderg.fa-comment.upm', // زر المحادثة الخاصة
-                                'span.fl.fa.btn.borderg.fa-heart.ulike', // زر اللايكات
-                                'span.fl.fa.btn.borderg.fa-ban.udelpic' // زر حذف الصورة
-                            ].forEach(sel =>
-                                modal.querySelectorAll(sel).forEach(el => ['visibility', 'display', 'opacity'].forEach((prop, i) =>
-                                    el.style.setProperty(prop, ['visible', 'inline-block', '1'][i], 'important')
-                                ))
-                            );
-                            
-                            // التحقق من اسم الروم
-                            modal.querySelectorAll('.u-room, .roomh').forEach(el => {
-                                let txt = el.textContent.trim();
-                                if (txt !== '' && !txt.includes('undefined')) {
-                                    // العضو داخل روم فعلاً
-                                    ['visibility', 'display', 'opacity'].forEach((prop, i) =>
-                                        el.style.setProperty(prop, ['visible', 'block', '1'][i], 'important')
-                                    );
-                                } else {
-                                    // العضو خارج الرومات → نخفي العنصر
-                                    el.style.setProperty('display', 'none', 'important');
-                                }
-                            });
-                        }
-                    });
-                    
-                }).observe(document.body, {
-                    childList: true,
-                    subtree: true
                 });
-                
-                // تشغيل أولي
-                showUsers();
-                showAllHigherRanksOnlyHidden();
-                fixHiddenFrames();
-                checkHiddenUsers();
-                
-                console.log("✅ تم التفعيل: إظهار الأزرار + المخفيين + إصلاح جميع الإطارات والألوان + تنبيه مع دعم إعادة الاتصال.");
-            })();
+            })[_0x1738a9(0x297)](document[_0x1738a9(0x3ce)], {
+                'childList': !![],
+                'subtree': !![]
+            });
+        }()), (function() {
+            const _0x809c0e = _0x3307bc;
             
-            console.log("🚀 تم تشغيل السكربت الثاني والثالث بعد جاهزية الاتصال");
-        }
-    }, 500);
-    
-})();
+            function _0x2e1858() {
+                const _0x2c27ab = _0x36f4;
+                document[_0x2c27ab(0x2f0) + _0x2c27ab(0x1f3)](_0x2c27ab(0x2a8))[_0x2c27ab(0x23b)](_0x26d493 => _0x26d493[_0x2c27ab(0x1c9)][_0x2c27ab(0x210)] = _0x2c27ab(0x461)), document[_0x2c27ab(0x2f0) + _0x2c27ab(0x1f3)](_0x2c27ab(0x47b) + _0x2c27ab(0x41f))[_0x2c27ab(0x23b)](_0x15919b => _0x15919b[_0x2c27ab(0x3d1)]()), typeof _ma56zznz2 !== _0x2c27ab(0x4cd) && Array[_0x2c27ab(0x4f0)](_ma56zznz2) && _ma56zznz2[_0x2c27ab(0x23b)](_0x3d7988 => {
+                    const _0x5a0e8b = _0x2c27ab;
+                    document[_0x5a0e8b(0x2f0) + _0x5a0e8b(0x1f3)]('.' + _0x3d7988[_0x5a0e8b(0x49c)])[_0x5a0e8b(0x23b)](_0x1a3214 => {
+                        const _0xcf8b3c = _0x5a0e8b;
+                        _0x1a3214[_0xcf8b3c(0x48b)][_0xcf8b3c(0x3d1)](_0x3d7988[_0xcf8b3c(0x49c)]), _0x1a3214[_0xcf8b3c(0x1c9)][_0xcf8b3c(0x210)] = _0xcf8b3c(0x461);
+                    });
+                });
+            }
+            if (!document[_0x809c0e(0x2e8) + _0x809c0e(0x3b8)](_0x809c0e(0x3d0) + _0x809c0e(0x222))) {
+                const _0x23b408 = document[_0x809c0e(0x46b) + _0x809c0e(0x264)](_0x809c0e(0x389));
+                _0x23b408['id'] = _0x809c0e(0x3d0) + _0x809c0e(0x222), _0x23b408[_0x809c0e(0x1c9)] = _0x809c0e(0x300) + _0x809c0e(0x329) + _0x809c0e(0x3ef) + _0x809c0e(0x23f) + _0x809c0e(0x404) + _0x809c0e(0x1d3) + _0x809c0e(0x381) + _0x809c0e(0x4f7) + _0x809c0e(0x1fa) + _0x809c0e(0x32c) + _0x809c0e(0x34d), document[_0x809c0e(0x3ce)][_0x809c0e(0x4a1) + 'd'](_0x23b408);
+            }
+            const _0x54538c = new Set();
+            
+            function _0xacc64c(_0x37cb33) {
+                const _0x729a75 = _0x809c0e,
+                    _0x556c19 = document[_0x729a75(0x46b) + _0x729a75(0x264)](_0x729a75(0x389));
+                _0x556c19[_0x729a75(0x3e5)] = () => _0x556c19[_0x729a75(0x3d1)](), _0x556c19[_0x729a75(0x1c9)] = _0x729a75(0x4fc) + _0x729a75(0x268) + _0x729a75(0x282) + _0x729a75(0x1da) + _0x729a75(0x392) + _0x729a75(0x42e) + _0x729a75(0x294) + _0x729a75(0x31c) + _0x729a75(0x3bf) + _0x729a75(0x311) + _0x729a75(0x2b4) + _0x729a75(0x291) + _0x729a75(0x372) + _0x729a75(0x446) + _0x729a75(0x26f) + _0x729a75(0x354) + _0x729a75(0x38d) + _0x729a75(0x2cc) + _0x729a75(0x4e0) + _0x729a75(0x32c) + _0x729a75(0x382), _0x556c19[_0x729a75(0x31e)] = _0x729a75(0x509) + _0x729a75(0x2f8) + _0x729a75(0x36c) + _0x729a75(0x271) + _0x729a75(0x32c) + _0x729a75(0x370) + _0x729a75(0x4d2) + _0x729a75(0x4f1) + _0x729a75(0x25b) + _0x729a75(0x509) + _0x729a75(0x2f8) + _0x729a75(0x37b) + _0x729a75(0x417) + _0x729a75(0x4e3) + _0x729a75(0x49f) + _0x729a75(0x414) + _0x729a75(0x228) + _0x729a75(0x422) + _0x37cb33[_0x729a75(0x207)] + (_0x729a75(0x310) + _0x729a75(0x45b) + _0x729a75(0x249) + _0x729a75(0x44b) + _0x729a75(0x1fe) + _0x729a75(0x1ee) + _0x729a75(0x22a) + _0x729a75(0x2ab) + _0x729a75(0x2b1)) + (_0x37cb33[_0x729a75(0x2c7)] ? _0x729a75(0x39e) + _0x37cb33[_0x729a75(0x2c7)] + (_0x729a75(0x486) + _0x729a75(0x3b9) + '\">') : '') + (_0x729a75(0x509) + _0x729a75(0x240) + _0x729a75(0x1d1) + _0x729a75(0x3a7) + _0x729a75(0x39b) + _0x729a75(0x240) + _0x729a75(0x431) + _0x729a75(0x2fe) + _0x729a75(0x4d7)) + _0x37cb33[_0x729a75(0x369)] + (_0x729a75(0x31f) + _0x729a75(0x39b) + _0x729a75(0x2f8) + _0x729a75(0x2d0) + _0x729a75(0x44f) + _0x729a75(0x424)) + _0x37cb33[_0x729a75(0x20d)] + (_0x729a75(0x31f) + _0x729a75(0x475) + _0x729a75(0x214) + _0x729a75(0x378) + _0x729a75(0x4ed) + _0x729a75(0x240) + _0x729a75(0x1fc) + _0x729a75(0x2ba) + _0x729a75(0x35b) + _0x729a75(0x3b4) + _0x729a75(0x2de) + _0x729a75(0x352) + _0x729a75(0x3fb) + _0x729a75(0x32c) + _0x729a75(0x453) + _0x729a75(0x2bc) + _0x729a75(0x3f5) + _0x729a75(0x2c5) + _0x729a75(0x31f) + _0x729a75(0x364)), document[_0x729a75(0x2e8) + _0x729a75(0x3b8)](_0x729a75(0x3d0) + _0x729a75(0x222))[_0x729a75(0x4a1) + 'd'](_0x556c19);
+            }
+            
+            function _0x536f47() {
+                const _0x1b77c2 = _0x809c0e,
+                    _0x1f2784 = [_0x1b77c2(0x458) + _0x1b77c2(0x208) + _0x1b77c2(0x395), _0x1b77c2(0x458) + _0x1b77c2(0x208) + _0x1b77c2(0x2c4)][_0x1b77c2(0x2a5)](',');
+                document[_0x1b77c2(0x2f0) + _0x1b77c2(0x1f3)](_0x1f2784)[_0x1b77c2(0x23b)](_0x49228a => {
+                    const _0x2fa9be = _0x1b77c2;
+                    _0x49228a[_0x2fa9be(0x218) + 'te'](_0x2fa9be(0x2cd) + _0x2fa9be(0x21b), '1');
+                }), document[_0x1b77c2(0x2f0) + _0x1b77c2(0x1f3)](_0x1b77c2(0x205) + _0x1b77c2(0x44a))[_0x1b77c2(0x23b)](_0x16af52 => {
+                    const _0x488211 = _0x1b77c2,
+                        _0x324cf1 = document[_0x488211(0x2e8) + _0x488211(0x3b8)](_0x488211(0x3e2));
+                    if (_0x324cf1 && _0x324cf1[_0x488211(0x3f6)][_0x488211(0x36e)]()[_0x488211(0x429)] > 0x1e62 + 0x31 + -0x1e93) return;
+                    if (!_0x16af52[_0x488211(0x47a)]) {
+                        const _0x9cc690 = _0x16af52[_0x488211(0x48b)][_0x488211(0x1fb)];
+                        _0x16af52[_0x488211(0x48b)][_0x488211(0x1fb)] = function(..._0x3d62f6) {
+                            const _0x11899a = _0x488211,
+                                _0x4d16e7 = _0x3d62f6[_0x11899a(0x233)](_0x58c1c3 => _0x58c1c3 !== _0x11899a(0x1ec));
+                            return _0x9cc690[_0x11899a(0x32b)](this, _0x4d16e7);
+                        }, _0x16af52[_0x488211(0x47a)] = !![];
+                    }
+                    _0x16af52[_0x488211(0x48b)][_0x488211(0x491)](_0x488211(0x1ec)) && _0x16af52[_0x488211(0x48b)][_0x488211(0x3d1)](_0x488211(0x1ec));
+                    _0x16af52[_0x488211(0x1c9)][_0x488211(0x210)] = _0x488211(0x461), _0x16af52[_0x488211(0x1c9)][_0x488211(0x331)] = _0x488211(0x1e2), _0x16af52[_0x488211(0x2f0) + _0x488211(0x1f3)](_0x488211(0x322) + _0x488211(0x23c) + _0x488211(0x258))[_0x488211(0x23b)](_0x27c1cc => {
+                        const _0x2235ea = _0x488211;
+                        _0x27c1cc[_0x2235ea(0x1c9)][_0x2235ea(0x210)] = _0x2235ea(0x461);
+                    });
+                    const _0x12f8cd = _0x16af52[_0x488211(0x2f0) + _0x488211(0x3a2)](_0x488211(0x256) + _0x488211(0x398) + _0x488211(0x2a9) + _0x488211(0x398) + _0x488211(0x3f9));
+                    if (_0x12f8cd) _0x12f8cd[_0x488211(0x37f)] = _0x488211(0x447) + 'g';
+                    const _0x15076f = _0x16af52[_0x488211(0x27b) + 'te']('n'),
+                        _0x33b7fb = _0x16af52[_0x488211(0x2f0) + _0x488211(0x3a2)](_0x488211(0x1d9));
+                    if (_0x33b7fb && _0x33b7fb[_0x488211(0x4d5) + 't'][_0x488211(0x36e)]() === '') {
+                        if (_0x15076f && _0x15076f[_0x488211(0x36e)]() !== '') _0x33b7fb[_0x488211(0x4d5) + 't'] = _0x15076f;
+                        else {
+                            const _0x2854ac = _0x33b7fb[_0x488211(0x27b) + 'te'](_0x488211(0x279) + _0x488211(0x361));
+                            if (_0x2854ac) _0x33b7fb[_0x488211(0x4d5) + 't'] = _0x2854ac;
+                        }
+                    }
+                    const _0x11a477 = _0x16af52[_0x488211(0x2f0) + _0x488211(0x3a2)](_0x488211(0x353));
+                    if (_0x11a477) {
+                        const _0x2946e5 = _0x11a477[_0x488211(0x27b) + 'te'](_0x488211(0x279) + _0x488211(0x3cf));
+                        if (_0x2946e5) _0x11a477[_0x488211(0x1c9)][_0x488211(0x4fc) + _0x488211(0x488)] = _0x488211(0x473) + _0x2946e5 + '\")';
+                        else {
+                            const _0x4d17b5 = _0x16af52[_0x488211(0x27b) + 'te'](_0x488211(0x4eb));
+                            if (_0x4d17b5) _0x11a477[_0x488211(0x1c9)][_0x488211(0x4fc) + _0x488211(0x488)] = _0x488211(0x473) + _0x4d17b5 + '\")';
+                        }
+                    }
+                });
+            }
+            
+            function _0x9d5b1a() {
+                const _0x3e005f = _0x809c0e;
+                document[_0x3e005f(0x2f0) + _0x3e005f(0x1f3)](_0x3e005f(0x219))[_0x3e005f(0x23b)](_0x457642 => {
+                    const _0x509533 = _0x3e005f,
+                        _0x307577 = window[_0x509533(0x3c5) + _0x509533(0x4a7)](_0x457642);
+                    (_0x307577[_0x509533(0x320)] === _0x509533(0x3ea) || _0x307577[_0x509533(0x3fd)] === _0x509533(0x3ea)) && (_0x457642[_0x509533(0x1c9)][_0x509533(0x320)] = '', _0x457642[_0x509533(0x1c9)][_0x509533(0x3fd)] = '');
+                    const _0x47a4a6 = _0x457642[_0x509533(0x2f0) + _0x509533(0x3a2)](_0x509533(0x4e7) + _0x509533(0x47b) + _0x509533(0x47c));
+                    _0x47a4a6 && _0x47a4a6[_0x509533(0x48b)][_0x509533(0x23b)](_0x103b89 => {
+                        const _0x3f2eae = _0x509533;
+                        if (_0x103b89[_0x3f2eae(0x45f)](_0x3f2eae(0x2c2))) {
+                            const _0xccdd7c = _0x103b89[_0x3f2eae(0x269)](_0x3f2eae(0x2c2), '')[_0x3f2eae(0x498) + 'e']();
+                            _0x457642[_0x3f2eae(0x48b)][_0x3f2eae(0x491)](_0xccdd7c) && _0x457642[_0x3f2eae(0x48b)][_0x3f2eae(0x3d1)](_0xccdd7c);
+                        }
+                    });
+                    [_0x509533(0x21f), _0x509533(0x425), _0x509533(0x1ec)][_0x509533(0x23b)](_0x42f42d => {
+                        const _0x223a25 = _0x509533;
+                        _0x457642[_0x223a25(0x48b)][_0x223a25(0x491)](_0x42f42d) && (_0x457642[_0x223a25(0x48b)][_0x223a25(0x3d1)](_0x42f42d), _0x457642[_0x223a25(0x1c9)][_0x223a25(0x320)] = '', _0x457642[_0x223a25(0x1c9)][_0x223a25(0x3fd)] = '');
+                    });
+                    const _0x2bc386 = _0x457642[_0x509533(0x2f0) + _0x509533(0x3a2)](_0x509533(0x1d9));
+                    if (_0x2bc386) {
+                        const _0x41e726 = window[_0x509533(0x3c5) + _0x509533(0x4a7)](_0x2bc386)[_0x509533(0x4fc) + _0x509533(0x399)],
+                            _0x36a453 = window[_0x509533(0x3c5) + _0x509533(0x4a7)](_0x2bc386)[_0x509533(0x350)];
+                        _0x41e726 === _0x36a453 && (_0x2bc386[_0x509533(0x1c9)][_0x509533(0x350)] = _0x509533(0x388));
+                    }
+                }), document[_0x3e005f(0x2f0) + _0x3e005f(0x1f3)](_0x3e005f(0x508) + _0x3e005f(0x3c3))[_0x3e005f(0x23b)](_0x5492c1 => {
+                    const _0x583be0 = _0x3e005f;
+                    _0x5492c1[_0x583be0(0x48b)][_0x583be0(0x3d1)](_0x583be0(0x237) + 'w');
+                });
+            }
+            
+            function _0x42e03e() {
+                const _0x14fe6b = _0x809c0e;
+                document[_0x14fe6b(0x2f0) + _0x14fe6b(0x1f3)](_0x14fe6b(0x285) + 'm')[_0x14fe6b(0x23b)](_0x4e94ad => {
+                    const _0x1a96bc = _0x14fe6b,
+                        _0x35484a = _0x4e94ad[_0x1a96bc(0x2f0) + _0x1a96bc(0x3a2)](_0x1a96bc(0x25d));
+                    if (_0x35484a && _0x35484a[_0x1a96bc(0x37f)][_0x1a96bc(0x28b)](_0x1a96bc(0x1e1))) {
+                        const _0x5d0a52 = [..._0x4e94ad[_0x1a96bc(0x48b)]][_0x1a96bc(0x4fa)](_0x4939ec => _0x4939ec[_0x1a96bc(0x45f)](_0x1a96bc(0x212)));
+                        if (_0x5d0a52 && !_0x54538c[_0x1a96bc(0x232)](_0x5d0a52)) {
+                            _0x54538c[_0x1a96bc(0x1fb)](_0x5d0a52);
+                            const _0xbb0029 = _0x4e94ad[_0x1a96bc(0x27b) + 'te']('n')?.[_0x1a96bc(0x36e)]() || _0x1a96bc(0x2b2);
+                            let _0x4dff06 = _0x1a96bc(0x39f) + _0x1a96bc(0x1ed);
+                            const _0x1bcb4f = _0x4e94ad[_0x1a96bc(0x2f0) + _0x1a96bc(0x3a2)](_0x1a96bc(0x353));
+                            if (_0x1bcb4f) {
+                                const _0x155c69 = _0x1bcb4f[_0x1a96bc(0x1c9)][_0x1a96bc(0x4fc) + _0x1a96bc(0x488)] || window[_0x1a96bc(0x3c5) + _0x1a96bc(0x4a7)](_0x1bcb4f)[_0x1a96bc(0x4fc) + _0x1a96bc(0x488)],
+                                    _0x305349 = _0x155c69[_0x1a96bc(0x4cb)](/url\(["']?(.*?)["']?\)/);
+                                _0x305349 && _0x305349[0x2 * 0xea3 + -0x181f + 0x526 * -0x1] && (_0x4dff06 = _0x305349[0x505 + -0x1 * 0x1129 + 0x1 * 0xc25][_0x1a96bc(0x45f)](_0x1a96bc(0x4da)) ? _0x305349[0x6d * -0x1 + 0x1815 + 0x7 * -0x361] : window[_0x1a96bc(0x416)][_0x1a96bc(0x376)] + '/' + _0x305349[0x3cd + -0x6d * 0x8 + -0x1 * 0x64][_0x1a96bc(0x269)](/^\/+/, ''));
+                            }
+                            const _0x30a6c9 = _0x4e94ad[_0x1a96bc(0x2f0) + _0x1a96bc(0x3a2)](_0x1a96bc(0x1fd))?.[_0x1a96bc(0x37f)] || '',
+                                _0x19dad3 = _0x4e94ad[_0x1a96bc(0x2f0) + _0x1a96bc(0x3a2)](_0x1a96bc(0x20a))?.[_0x1a96bc(0x4d5) + 't'] || '';
+                            _0xacc64c({
+                                'name': _0xbb0029,
+                                'pic': _0x4dff06,
+                                'icon': _0x30a6c9,
+                                'hash': _0x19dad3
+                            });
+                        }
+                    }
+                });
+                for (const _0x3be303 of _0x54538c) {
+                    !document[_0x14fe6b(0x2f0) + _0x14fe6b(0x3a2)](_0x14fe6b(0x285) + 'm.' + _0x3be303 + (_0x14fe6b(0x400) + _0x14fe6b(0x4fe) + _0x14fe6b(0x317))) && _0x54538c[_0x14fe6b(0x4e4)](_0x3be303);
+                }
+            }
+            new MutationObserver(() => {
+                const _0x2185a7 = _0x809c0e,
+                    _0x463988 = document[_0x2185a7(0x2e8) + _0x2185a7(0x3b8)](_0x2185a7(0x3e2));
+                if (_0x463988 && _0x463988[_0x2185a7(0x3f6)][_0x2185a7(0x36e)]()[_0x2185a7(0x429)] > -0x1011 + 0x712 + 0x8ff) return;
+                _0x2e1858(), _0x536f47(), _0x9d5b1a(), _0x42e03e(), enablePrivateChatOnS4(), document[_0x2185a7(0x2f0) + _0x2185a7(0x1f3)](_0x2185a7(0x288) + 'in')[_0x2185a7(0x23b)](_0x5a9bbe => {
+                    const _0x19bede = _0x2185a7;
+                    let _0x44c1cd = _0x5a9bbe[_0x19bede(0x2ff)][_0x19bede(0x4ec)](/\s+/);
+                    _0x44c1cd[_0x19bede(0x429)] > -0x1 * -0x10c9 + -0xc1 * 0x7 + 0x5c * -0x20 && ([_0x19bede(0x261) + _0x19bede(0x391) + _0x19bede(0x390) + _0x19bede(0x1cd) + 't', _0x19bede(0x261) + _0x19bede(0x391) + _0x19bede(0x1d6) + _0x19bede(0x21e), _0x19bede(0x261) + _0x19bede(0x391) + _0x19bede(0x3cc) + _0x19bede(0x455), _0x19bede(0x261) + _0x19bede(0x391) + _0x19bede(0x4b4) + _0x19bede(0x2f9)][_0x19bede(0x23b)](_0x4abecc => _0x5a9bbe[_0x19bede(0x2f0) + _0x19bede(0x1f3)](_0x4abecc)[_0x19bede(0x23b)](_0x313b82 => [_0x19bede(0x476), _0x19bede(0x210), _0x19bede(0x332)][_0x19bede(0x23b)]((_0x1a4702, _0x475873) => _0x313b82[_0x19bede(0x1c9)][_0x19bede(0x39c) + 'y'](_0x1a4702, [_0x19bede(0x375), _0x19bede(0x4a0) + 'ck', '1'][_0x475873], _0x19bede(0x4f4))))), _0x5a9bbe[_0x19bede(0x2f0) + _0x19bede(0x1f3)](_0x19bede(0x4b9) + _0x19bede(0x3d4))[_0x19bede(0x23b)](_0x379a73 => {
+                        const _0x5f1bcf = _0x19bede;
+                        let _0x516eea = _0x379a73[_0x5f1bcf(0x4d5) + 't'][_0x5f1bcf(0x36e)]();
+                        _0x516eea !== '' && !_0x516eea[_0x5f1bcf(0x28b)](_0x5f1bcf(0x4cd)) ? [_0x5f1bcf(0x476), _0x5f1bcf(0x210), _0x5f1bcf(0x332)][_0x5f1bcf(0x23b)]((_0x366a0f, _0xcdd6b1) => _0x379a73[_0x5f1bcf(0x1c9)][_0x5f1bcf(0x39c) + 'y'](_0x366a0f, [_0x5f1bcf(0x375), _0x5f1bcf(0x461), '1'][_0xcdd6b1], _0x5f1bcf(0x4f4))) : _0x379a73[_0x5f1bcf(0x1c9)][_0x5f1bcf(0x39c) + 'y'](_0x5f1bcf(0x210), _0x5f1bcf(0x1e2), _0x5f1bcf(0x4f4));
+                    }));
+                });
+            })[_0x809c0e(0x297)](document[_0x809c0e(0x3ce)], {
+                'childList': !![],
+                'subtree': !![]
+            }), _0x2e1858(), _0x536f47(), _0x9d5b1a(), _0x42e03e(), enablePrivateChatOnS4(), console[_0x809c0e(0x423)](_0x809c0e(0x338) + _0x809c0e(0x4b2) + _0x809c0e(0x34f) + _0x809c0e(0x28f) + _0x809c0e(0x40c) + _0x809c0e(0x220) + _0x809c0e(0x471) + _0x809c0e(0x480) + _0x809c0e(0x1e5) + _0x809c0e(0x2e0));
+        }()), console[_0x3307bc(0x423)](_0x3307bc(0x4be) + _0x3307bc(0x4e5) + _0x3307bc(0x4b6) + _0x3307bc(0x2b5) + _0x3307bc(0x368) + 'ال'));
+    }, 0x4b1 * 0x7 + 0x2398 + -0x427b);
+}());
